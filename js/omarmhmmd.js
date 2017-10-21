@@ -1,7 +1,6 @@
 /*var randomColorRGB = require('random-color-rgb');
 console.log(randomColorRGB({opacity: 1}));
 var color = randomColorRGB();*/
-
 var x = document.getElementsByClassName("layers");
 var i,z;
 for (i = 0; i < x.length; i++) {
@@ -102,4 +101,27 @@ window.onload = function() {
     delay:3000,
     easing:easing
   });
+
+  var layer007 = anime({
+    targets: '.layer007',
+    backgroundColor: 'hsl(' + h + ',' + s + '%, 89.2%)',
+    duration: duration,
+    delay:3000,
+    easing:easing
+  });
+}
+
+/******** TOOLTIP ********/
+dw_Tooltip.defaultProps = {
+    //supportTouch: true, // set false by default
+    wrapFn: dw_Tooltip.wrapImageToWidth
+}
+
+dw_Tooltip.content_vars = {
+    L1: {
+        img: 'images/006.jpg',
+        w: 200, // width of image
+        h: 300 // height of image
+
+    }
 }

@@ -161,22 +161,3 @@ ul {
   position: absolute;
   padding-left: 69.75%;
 }
-
-.layer008 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.3);
-  float: left;
-}
-
-.layer008 li {
-  float: left;
-}
-
-.layer008 li:nth-child(2) {
-  padding-left: 511px;
-}
-
-.layer008 li:nth-child(3) {
-  padding-left: 99px;
-}
