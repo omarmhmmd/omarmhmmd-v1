@@ -56,6 +56,8 @@ var b = Math.floor(Math.random()*256);
 
 var h = Math.floor(Math.random()*361);
 
+//var h = 50;
+
 window.onload = function() {
   var layer001 = anime({
     targets: '.layer001',
@@ -66,42 +68,42 @@ window.onload = function() {
   });
   var layer002 = anime({
     targets: '.layer002',
-    backgroundColor:'hsl(' + h + ', 100%, 56%)',
+    backgroundColor:'hsl(' + h + ', 100%, 56.7%)',
     duration: duration,
     delay:500,
     easing:easing
   });
   var layer003 = anime({
     targets: '.layer003',
-    backgroundColor:'hsl(' + h + ', 100%, 62%)',
+    backgroundColor:'hsl(' + h + ', 100%, 62.4%)',
     duration: duration,
     delay:1000,
     easing:easing
   });
   var layer004 = anime({
     targets: '.layer004',
-    backgroundColor:'hsl(' + h + ', 100%, 68%)',
+    backgroundColor:'hsl(' + h + ', 100%, 69.1%)',
     duration: duration,
     delay:1500,
     easing:easing
   });
   var layer005 = anime({
     targets: '.layer005',
-    backgroundColor:'hsl(' + h + ', 100%, 74%)',
+    backgroundColor:'hsl(' + h + ', 100%, 75.8%)',
     duration: duration,
     delay:2000,
     easing:easing
   });
   var layer006 = anime({
     targets: '.layer006',
-    backgroundColor:'hsl(' + h + ', 100%, 80%)',
+    backgroundColor:'hsl(' + h + ', 100%, 82.5%)',
     duration: duration,
     delay:2500,
     easing:easing
   });
   var layer007 = anime({
     targets: '.layer007',
-    backgroundColor:'hsl(' + h + ', 100%, 86%)',
+    backgroundColor:'hsl(' + h + ', 100%, 89.2%)',
     duration: duration,
     delay:3000,
     easing:easing
