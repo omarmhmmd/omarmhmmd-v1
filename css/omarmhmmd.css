@@ -27,13 +27,11 @@ html {
 
 ul {
   list-style-type: none;
-  padding: 25px 0 0 75px;
-  height: 30px;
-  display: ;
+  padding: 3.5% 0 7% 5%;
 }
 
 .title {
-  padding: 28px 0 0 75px;
+  padding: 2.5% 0 0 5%;
 }
 
 .title h1 {
@@ -46,8 +44,9 @@ ul {
 }
 
 .layers {
-  height:80.5px;
+
 }
+
 .layer001 {
   margin-top: 0px;
   width: 100%;
