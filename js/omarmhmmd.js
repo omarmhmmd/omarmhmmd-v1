@@ -65,7 +65,7 @@ window.onload = function() {
   });
   var layer002 = anime({
     targets: '.layer002',
-    backgroundColor:'hsl(' + h + ', 100%, 56%)',
+    backgroundColor:'hsl(' + h + ', 100%, 6%)',
     duration: duration,
     delay:500,
     easing:easing
