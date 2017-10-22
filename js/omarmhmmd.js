@@ -1,60 +1,14 @@
-/*var randomColorRGB = require('random-color-rgb');
-console.log(randomColorRGB({opacity: 1}));
-var color = randomColorRGB();*/
+/******** LAYER COLORS ********/
 var x = document.getElementsByClassName("layers");
-var i,z;
-for (i = 0; i < x.length; i++) {
+for (var i = 0; i < x.length; i++) {
   var x = document.getElementsByClassName("layers");
   x[i].style.backgroundColor = "#FFF";
-  console.log("rgb("+ r +"," + g + "," + b + ")");
 }
 
 var duration = 2000;
 var easing = 'easeInOutQuad';
-  /*var layer002 = anime({
-    targets: '.layer002',
-    translateY: [{ value: "80.5px", duration: duration },],
-    easing: easing,
-    delay: 0,
-  });
-  var layer003 = anime({
-    targets: '.layer003',
-    translateY: [{ value: "164px", duration: duration },],
-    easing: easing,
-    delay: 500,
-  });
-  var layer004 = anime({
-    targets: '.layer004',
-    translateY: [{ value: "248px", duration: duration },],
-    easing: easing,
-    delay: 1000,
-  });
-  var layer005 = anime({
-    targets: '.layer005',
-    translateY: [{ value: "332px", duration: duration },],
-    easing: easing,
-    delay: 1500,
-  });
-  var layer006 = anime({
-    targets: '.layer006',
-    translateY: [{ value: "416px", duration: duration },],
-    easing: easing,
-    delay: 2000,
-  });
-  var layer007 = anime({
-    targets: '.layer007',
-    translateY: [{ value: "500px", duration: duration },],
-    easing: easing,
-    delay: 2500,
-  });*/
-
-var r = Math.floor(Math.random()*256);          // Random between 0-255
-var g = Math.floor(Math.random()*256);          // Random between 0-255
-var b = Math.floor(Math.random()*256);
-
 var h = Math.floor(Math.random()*361);
 var s = 75;
-
 //var h = 77;
 
 window.onload = function() {
@@ -110,6 +64,7 @@ window.onload = function() {
     easing:easing
   });
 }
+/******** END LAYER COLORS ********/
 
 /******** TOOLTIP ********/
 dw_Tooltip.defaultProps = {
@@ -119,9 +74,34 @@ dw_Tooltip.defaultProps = {
 
 dw_Tooltip.content_vars = {
     L1: {
-        img: 'images/006.jpg',
+        img: 'images/sfmomabathrooms.jpg',
         w: 200, // width of image
         h: 300 // height of image
-
+    },
+    L2: {
+        img: 'images/monolith.jpg',
+        w: 300, // width of image
+        h: 200 // height of image
+    },
+    L3: {
+        img: 'images/qiblah.jpg',
+        w: 300, // width of image
+        h: 200 // height of image
+    },
+    L4: {
+        img: 'images/josefAlbersBot.jpg',
+        w: 300, // width of image
+        h: 200 // height of image
+    },
+    L5: {
+        img: 'images/shade.jpg',
+        w: 237.5, // width of image
+        h: 300 // height of image
+    },
+    L6: {
+        img: 'images/BlackRose.png',
+        w: 225, // width of image
+        h: 300 // height of image
     }
 }
+/******** END TOOLTIP ********/

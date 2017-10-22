@@ -6,6 +6,7 @@ html, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  cursor: crosshair;
 }
 /******** END RESET ********/
 
@@ -21,17 +22,37 @@ html, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
 }
 /******** END FONTS ********/
 
+/******** BODY ********/
 html {
   font-family:'nh55';
 }
+/******** END BODY ********/
 
+/******** HEADERS ********/
 .title {
   padding: 2.5% 0 0 5%;
 }
 
 .title h1 {
-  font-size: 2vw;
+  font-size: 1.75vw;
   line-height: 140%;
+  width: 95%;
+}
+
+/******** END HEADERS ********/
+
+/******** MENU/LAYERS ********/
+.menu {
+  margin-top: 2.25%;
+}
+
+.layers li {
+  float: left;
+}
+
+.layers li:nth-child(3) {
+  position: absolute;
+  padding-left: 88%;
 }
 
 ul {
@@ -40,40 +61,9 @@ ul {
   font-size: 1.75vw;
 }
 
-.menu {
-  margin-top: 2.25%;
-}
-
-.layers li:nth-child(3) {
-  position: absolute;
-  padding-left: 88%;
-}
-
-.layer001 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 1);
-  float: left;
-}
-
-.layer001 li {
-  float: left;
-}
-
 .layer001 li:nth-child(2) {
   position: absolute;
   padding-left: 65%;
-}
-
-.layer002 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.9);
-  float: left;
-}
-
-.layer002 li {
-  float: left;
 }
 
 .layer002 li:nth-child(2) {
@@ -81,32 +71,9 @@ ul {
   padding-left: 66%;
 }
 
-.layer003 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.8);
-  float: left;
-}
-
-.layer003 li {
-  float: left;
-}
-
 .layer003 li:nth-child(2) {
   position: absolute;
   padding-left: 68.5%;
-}
-
-
-.layer004 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.7);
-  float: left;
-}
-
-.layer004 li {
-  float: left;
 }
 
 .layer004 li:nth-child(2) {
@@ -114,31 +81,9 @@ ul {
   padding-left: 62%;
 }
 
-.layer005 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.6);
-  float: left;
-}
-
-.layer005 li {
-  float: left;
-}
-
 .layer005 li:nth-child(2) {
   position: absolute;
   padding-left: 68%;
-}
-
-.layer006 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.5);
-  float: left;
-}
-
-.layer006 li {
-  float: left;
 }
 
 .layer006 li:nth-child(2) {
@@ -146,18 +91,8 @@ ul {
   padding-left: 70%;
 }
 
-.layer007 {
-  margin-top: 0px;
-  width: 100%;
-  background: rgba(107, 126, 60, 0.4);
-  float: left;
-}
-
-.layer007 li {
-  float: left;
-}
-
 .layer007 li:nth-child(2) {
   position: absolute;
   padding-left: 69.75%;
 }
+/******** END MENU/LAYERS ********/
