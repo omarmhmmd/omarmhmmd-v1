@@ -8,6 +8,13 @@ html, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
   vertical-align: baseline;
   cursor: crosshair;
 }
+
+button {
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    outline:none;
+}
 /******** END RESET ********/
 
 /******** FONTS ********/
@@ -25,8 +32,13 @@ html, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
 /******** BODY ********/
 html {
   font-family:'nh55';
+  backgroundColor: #fff;
 }
 /******** END BODY ********/
+.container {
+  height: 100%;
+  width: 100%;
+}
 
 /******** HEADERS ********/
 .title {
@@ -59,6 +71,10 @@ ul {
   list-style-type: none;
   padding: 2.5% 0 5% 5%;
   font-size: 1.75vw;
+}
+
+.layer001 {
+
 }
 
 .layer001 li:nth-child(2) {
