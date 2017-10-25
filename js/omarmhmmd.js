@@ -6,44 +6,53 @@ for (var i = 0; i < x.length; i++) {
 }
 
 var durationColors = 2000;
-var durationLayers = 500;
+var durationLayers = 1000;
 var easing = 'easeInOutQuad';
 var h = Math.floor(Math.random()*361);
 var s = 75;
 //var h = 77;
 
+var color001 = 'hsl(' + h + ',' + s + '%, 50%)';
+var color002 = 'hsl(' + h + ',' + s + '%, 56.7%)';
+var color003 = 'hsl(' + h + ',' + s + '%, 62.4%)';
+var color004 = 'hsl(' + h + ',' + s + '%, 69.1%)';
+var color005 = 'hsl(' + h + ',' + s + '%, 75.8%)';
+var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
+var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
+
 window.onload = function() {
   var layer001 = anime({
     targets: '.layer001',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 50%)',
+    backgroundColor: color001,
     duration: durationColors,
     delay:0,
     easing:easing
   });
   var layer002 = anime({
     targets: '.layer002',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 56.7%)',
+    backgroundColor: color002,
     duration: durationColors,
     delay:500,
     easing:easing
   });
   var layer003 = anime({
     targets: '.layer003',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 62.4%)',
+    backgroundColor: color003,
     duration: durationColors,
     delay:1000,
     easing:easing
   });
   var layer004 = anime({
     targets: '.layer004',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 69.1%)',
+    backgroundColor: color004,
     duration: durationColors,
     delay:1500,
     easing:easing
   });
   var layer005 = anime({
     targets: '.layer005',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 75.8%)',
+    backgroundColor: color005
+    ,
     duration: durationColors,
     delay:2000,
     easing:easing
@@ -51,7 +60,7 @@ window.onload = function() {
 
   var layer006 = anime({
     targets: '.layer006',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 82.5%)',
+    backgroundColor: color006,
     duration: durationColors,
     delay:3000,
     easing:easing
@@ -59,7 +68,7 @@ window.onload = function() {
 
   var layer007 = anime({
     targets: '.layer007',
-    backgroundColor: 'hsl(' + h + ',' + s + '%, 89.2%)',
+    backgroundColor: color007,
     duration: durationColors,
     delay:3500,
     easing:easing
@@ -109,69 +118,68 @@ dw_Tooltip.content_vars = {
 
 /******** LAYER 001 ********/
 var clickedLayer001 = false;
-$("button").click(function() {
+$(".button001").click(function() {
   if (!clickedLayer001) {
     $(".layer001").removeClass("L1");
-    $(".layer002").css("display", "none");
-    $(".layer003").css("display", "none");
-    $(".layer004").css("display", "none");
-    $(".layer005").css("display", "none");
-    $(".layer006").css("display", "none");
-    $(".layer007").css("display", "none");
+    $(".layer002").css("visibility", "hidden");
+    $(".layer003").css("visibility", "hidden");
+    $(".layer004").css("visibility", "hidden");
+    $(".layer005").css("visibility", "hidden");
+    $(".layer006").css("visibility", "hidden");
+    $(".layer007").css("visibility", "hidden");
 
-    $(".layer001").css({borderBottom: 'solid #000 0.15vw'}).animate({
-         borderWidth: "0.15vw"
-     }, 500);
-    var animation = anime({
+    $(".layer001").css({borderBottom: 'solid #000 0.15vw'});
+
+    var moveLayer001 = anime({
       targets: '.layer001',
       translateY: "-125%",
       easing:easing,
       duration:durationLayers,
     });
-    var animation = anime({
+    var bgColor001 = anime({
       targets: 'body',
-      backgroundColor: ['#FFF', 'hsl(' + h + ',' + s + '%, 50%)'],
+      backgroundColor: ['#FFF', color001],
       //delay: durationLayers * 2,
       easing:easing,
       duration:durationColors / 2
     });
-    var animation = anime({
-      targets: 'button',
+    var button = anime({
+      targets: '.button001',
       rotate: 45,
       scale: 1.25,
       easing:easing,
       duration:durationLayers
     });
+
     clickedLayer001 = true;
   }
   else if (clickedLayer001) {
     console.log("back");
     $(".layer001").addClass("L1");
-    $(".layer002").css("display", "");
-    $(".layer003").css("display", "");
-    $(".layer004").css("display", "");
-    $(".layer005").css("display", "");
-    $(".layer006").css("display", "");
-    $(".layer007").css("display", "");
+    $(".layer002").css("visibility", "visible");
+    $(".layer003").css("visibility", "visible");
+    $(".layer004").css("visibility", "visible");
+    $(".layer005").css("visibility", "visible");
+    $(".layer006").css("visibility", "visible");
+    $(".layer007").css("visibility", "visible");
 
-    $(".layer001").css({borderBottom: 'solid #000 0vw'}).animate({
-         borderWidth: "0vw"
-     }, 500);
-    var animation = anime({
+    $(".layer001").css({borderBottom: 'solid #000 0vw'});
+    
+    var moveLayer001 = anime({
       targets: '.layer001',
       translateY: "0",
       easing:easing,
       duration:durationLayers,
     });
-    var animation = anime({
+    var bgColor001 = anime({
       targets: 'body',
-      backgroundColor: ['hsl(' + h + ',' + s + '%, 50%)', '#FFF'],
+      backgroundColor: [color001, '#FFF'],
       //delay: durationLayers * 2,
       easing:easing,
       duration:durationColors / 2
     });
-    var animation = anime({
-      targets: 'button',
+    var button = anime({
+      targets: '.button001',
       rotate: -90,
       scale: 1,
       easing:easing,
@@ -179,6 +187,390 @@ $("button").click(function() {
     });
     clickedLayer001 = false;
   }
-
 })
 /******** END LAYER 001 ********/
+
+/******** LAYER 002 ********/
+var clickedLayer002 = false;
+$(".button002").click(function() {
+  console.log("layer002 Clicked");
+  if (!clickedLayer002) {
+    $(".layer002").removeClass("L2");
+
+    $(".layer001").css("visibility", "hidden");
+    $(".layer003").css("visibility", "hidden");
+    $(".layer004").css("visibility", "hidden");
+    $(".layer005").css("visibility", "hidden");
+    $(".layer006").css("visibility", "hidden");
+    $(".layer007").css("visibility", "hidden");
+
+    $(".layer002").css({borderBottom: 'solid #000 0.15vw'}).animate({
+         borderWidth: "0.15vw"
+     }, 500);
+    var moveLayer002 = anime({
+      targets: '.layer002',
+      translateY: "-225%",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor002 = anime({
+      targets: 'body',
+      backgroundColor: ['#FFF', color002],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button002',
+      rotate: 45,
+      scale: 1.25,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer002 = true;
+  }
+  else if (clickedLayer002) {
+    console.log("back from 002");
+    $(".layer002").addClass("L2");
+    $(".layer001").css("visibility", "visible");
+    $(".layer003").css("visibility", "visible");
+    $(".layer004").css("visibility", "visible");
+    $(".layer005").css("visibility", "visible");
+    $(".layer006").css("visibility", "visible");
+    $(".layer007").css("visibility", "visible");
+
+    $(".layer002").css({borderBottom: 'solid #000 0vw'}).animate({
+         borderWidth: "0vw"
+     }, 500);
+    var moveLayer002 = anime({
+      targets: '.layer002',
+      translateY: "0",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor002 = anime({
+      targets: 'body',
+      backgroundColor: [color002, '#FFF'],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button002',
+      rotate: -90,
+      scale: 1,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer002 = false;
+  }
+})
+/******** END LAYER 002 ********/
+
+/******** LAYER 003 ********/
+var clickedLayer003 = false;
+$(".button003").click(function() {
+  console.log("layer003 Clicked");
+  if (!clickedLayer003) {
+    $(".layer003").removeClass("L3");
+    $(".layer001").css("visibility", "hidden");
+    $(".layer002").css("visibility", "hidden");
+    $(".layer004").css("visibility", "hidden");
+    $(".layer005").css("visibility", "hidden");
+    $(".layer006").css("visibility", "hidden");
+    $(".layer007").css("visibility", "hidden");
+
+    $(".layer003").css({borderBottom: 'solid #000 0.15vw'}).animate({
+         borderWidth: "0.15vw"
+     }, 500);
+    var moveLayer003 = anime({
+      targets: '.layer003',
+      translateY: "-325%",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor003 = anime({
+      targets: 'body',
+      backgroundColor: ['#FFF', color003],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button003',
+      rotate: 45,
+      scale: 1.25,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer003 = true;
+  }
+  else if (clickedLayer003) {
+    console.log("back from 003");
+    $(".layer003").addClass("L3");
+    $(".layer001").css("visibility", "visible");
+    $(".layer002").css("visibility", "visible");
+    $(".layer004").css("visibility", "visible");
+    $(".layer005").css("visibility", "visible");
+    $(".layer006").css("visibility", "visible");
+    $(".layer007").css("visibility", "visible");
+
+    $(".layer003").css({borderBottom: 'solid #000 0vw'}).animate({
+         borderWidth: "0vw"
+     }, 500);
+    var moveLayer003 = anime({
+      targets: '.layer003',
+      translateY: "0",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor003 = anime({
+      targets: 'body',
+      backgroundColor: [color003, '#FFF'],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button003',
+      rotate: -90,
+      scale: 1,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer003 = false;
+  }
+})
+/******** END LAYER 003 ********/
+
+/******** LAYER 004 ********/
+var clickedLayer004 = false;
+$(".button004").click(function() {
+  console.log("layer004 Clicked");
+  if (!clickedLayer004) {
+    $(".layer004").removeClass("L4");
+    $(".layer001").css("visibility", "hidden");
+    $(".layer002").css("visibility", "hidden");
+    $(".layer003").css("visibility", "hidden");
+    $(".layer005").css("visibility", "hidden");
+    $(".layer006").css("visibility", "hidden");
+    $(".layer007").css("visibility", "hidden");
+
+    $(".layer004").css({borderBottom: 'solid #000 0.15vw'}).animate({
+         borderWidth: "0.15vw"
+     }, 500);
+    var moveLayer004 = anime({
+      targets: '.layer004',
+      translateY: "-425%",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor004 = anime({
+      targets: 'body',
+      backgroundColor: ['#FFF', color004],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button004',
+      rotate: 45,
+      scale: 1.25,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer004 = true;
+  }
+  else if (clickedLayer004) {
+    console.log("back from 004");
+    $(".layer004").addClass("L4");
+    $(".layer001").css("visibility", "visible");
+    $(".layer002").css("visibility", "visible");
+    $(".layer003").css("visibility", "visible");
+    $(".layer005").css("visibility", "visible");
+    $(".layer006").css("visibility", "visible");
+    $(".layer007").css("visibility", "visible");
+
+    $(".layer004").css({borderBottom: 'solid #000 0vw'}).animate({
+         borderWidth: "0vw"
+     }, 500);
+    var moveLayer004 = anime({
+      targets: '.layer004',
+      translateY: "0",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor004 = anime({
+      targets: 'body',
+      backgroundColor: [color004, '#FFF'],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button004',
+      rotate: -90,
+      scale: 1,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer004 = false;
+  }
+})
+/******** END LAYER 004 ********/
+
+/******** LAYER 005 ********/
+var clickedLayer005 = false;
+$(".button005").click(function() {
+  console.log("layer005 Clicked");
+  if (!clickedLayer005) {
+    $(".layer005").removeClass("L5");
+    $(".layer001").css("visibility", "hidden");
+    $(".layer002").css("visibility", "hidden");
+    $(".layer003").css("visibility", "hidden");
+    $(".layer004").css("visibility", "hidden");
+    $(".layer006").css("visibility", "hidden");
+    $(".layer007").css("visibility", "hidden");
+
+    $(".layer005").css({borderBottom: 'solid #000 0.15vw'}).animate({
+         borderWidth: "0.15vw"
+     }, 500);
+    var moveLayer005 = anime({
+      targets: '.layer005',
+      translateY: "-525%",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor005 = anime({
+      targets: 'body',
+      backgroundColor: ['#FFF', color005],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button005',
+      rotate: 45,
+      scale: 1.25,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer005 = true;
+  }
+  else if (clickedLayer005) {
+    console.log("back from 005");
+    $(".layer005").addClass("L5");
+    $(".layer001").css("visibility", "visible");
+    $(".layer002").css("visibility", "visible");
+    $(".layer003").css("visibility", "visible");
+    $(".layer004").css("visibility", "visible");
+    $(".layer006").css("visibility", "visible");
+    $(".layer007").css("visibility", "visible");
+
+    $(".layer005").css({borderBottom: 'solid #000 0vw'}).animate({
+         borderWidth: "0vw"
+     }, 500);
+    var moveLayer005 = anime({
+      targets: '.layer005',
+      translateY: "0",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor005 = anime({
+      targets: 'body',
+      backgroundColor: [color005, '#FFF'],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button005',
+      rotate: -90,
+      scale: 1,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer005 = false;
+  }
+})
+/******** END LAYER 005 ********/
+
+/******** LAYER 006 ********/
+var clickedLayer006 = false;
+$(".button006").click(function() {
+  console.log("layer006 Clicked");
+  if (!clickedLayer006) {
+    $(".layer006").removeClass("L6");
+    $(".layer001").css("visibility", "hidden");
+    $(".layer002").css("visibility", "hidden");
+    $(".layer003").css("visibility", "hidden");
+    $(".layer004").css("visibility", "hidden");
+    $(".layer005").css("visibility", "hidden");
+    $(".layer007").css("visibility", "hidden");
+    setTimeout( function(){
+      $(".title").css('visibility','hidden');
+    },800);
+
+    $(".layer006").css({borderBottom: 'solid #000 0.15vw'}).animate({
+         borderWidth: "0.15vw"
+     }, 500);
+    var moveLayer006 = anime({
+      targets: '.layer006',
+      translateY: "-625%",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor006 = anime({
+      targets: 'body',
+      backgroundColor: ['#FFF', color006],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button006',
+      rotate: 45,
+      scale: 1.25,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer006 = true;
+  }
+  else if (clickedLayer006) {
+    console.log("back from 006");
+    $(".layer006").addClass("L6");
+    $(".layer001").css("visibility", "visible");
+    $(".layer002").css("visibility", "visible");
+    $(".layer003").css("visibility", "visible");
+    $(".layer004").css("visibility", "visible");
+    $(".layer005").css("visibility", "visible");
+    $(".layer007").css("visibility", "visible");
+    $(".title").css("visibility", "visible");
+
+    $(".layer006").css({borderBottom: 'solid #000 0vw'}).animate({
+         borderWidth: "0vw"
+     }, 500);
+    var moveLayer006 = anime({
+      targets: '.layer006',
+      translateY: "0",
+      easing:easing,
+      duration:durationLayers,
+    });
+    var bgColor006 = anime({
+      targets: 'body',
+      backgroundColor: [color006, '#FFF'],
+      //delay: durationLayers * 2,
+      easing:easing,
+      duration:durationColors / 2
+    });
+    var button = anime({
+      targets: '.button006',
+      rotate: -90,
+      scale: 1,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer006 = false;
+  }
+})
+/******** END LAYER 006 ********/

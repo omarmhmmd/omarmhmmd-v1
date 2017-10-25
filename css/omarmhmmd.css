@@ -6,11 +6,12 @@ html, button, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  cursor: crosshair;
+  /*cursor: crosshair;*/
 }
 
 button {
     background-color: Transparent;
+    position: absolute;
     border: none;
     cursor: pointer;
     outline:none;
@@ -47,6 +48,7 @@ html {
 
 .title h1 {
   font-size: 1.75vw;
+  /*font-size: 1.75em;*/
   line-height: 140%;
   width: 95%;
 }
@@ -69,8 +71,9 @@ html {
 
 ul {
   list-style-type: none;
-  padding: 2.5% 0 5% 5%;
+  padding: 2.5% 0 4.75% 5%;
   font-size: 1.75vw;
+  /*font-size: 1.75em;*/
 }
 
 .layer001 {
