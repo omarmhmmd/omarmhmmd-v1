@@ -16,6 +16,14 @@ button {
     cursor: pointer;
     outline:none;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+
 /******** END RESET ********/
 
 /******** FONTS ********/
@@ -55,6 +63,54 @@ html {
 
 /******** END HEADERS ********/
 
+/******** INFO ********/
+.info001 {
+  display: none;
+
+}
+.info001 li {
+  list-style-type: none;
+  position: absolute;
+  background-color: ;
+  font-family: 'nh55';
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.150vw;
+  margin: -9.5% 0 0 0%;
+  color: #000000;
+  z-index: -1;
+}
+
+.info001 p span{
+  font-family: 'nh65';
+}
+
+.info001 li:nth-child(1) {
+  width: 30%;
+  height: 10%;
+}
+
+.info001 li:nth-child(2) {
+  width: 18%;
+  height: 20%;
+  position: absolute;
+  padding-left: 39.5%;
+}
+
+.info001 li:nth-child(3) {
+  width: 17%;
+  height: 20%;
+  position: absolute;
+  padding-left:65.25%;
+}
+
+.info001 img {
+  width: 90%;
+  padding: 0.25% 0 0 5%;
+}
+/******** END INFO ********/
+
 /******** MENU/LAYERS ********/
 .menu {
   margin-top: 2.25%;
@@ -82,7 +138,8 @@ ul {
 
 .layer001 li:nth-child(2) {
   position: absolute;
-  padding-left: 65%;
+  /*padding-left: 73%;*/
+  padding-left:65%;
 }
 
 .layer002 li:nth-child(2) {

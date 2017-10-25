@@ -118,7 +118,7 @@ dw_Tooltip.content_vars = {
 
 /******** LAYER 001 ********/
 var clickedLayer001 = false;
-$(".button001").click(function() {
+$(".buttonLayer001").click(function() {
   if (!clickedLayer001) {
     $(".layer001").removeClass("L1");
     $(".layer002").css("visibility", "hidden");
@@ -128,11 +128,13 @@ $(".button001").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
+    $(".info001").css("display", "inline");
+
     $(".layer001").css({borderBottom: 'solid #000 0.15vw'});
 
     var moveLayer001 = anime({
       targets: '.layer001',
-      translateY: "-125%",
+      translateY: "-130%",
       easing:easing,
       duration:durationLayers,
     });
@@ -150,7 +152,12 @@ $(".button001").click(function() {
       easing:easing,
       duration:durationLayers
     });
-
+    // var childOne = anime({
+    //   targets: '.layer001 li:nth-child(1)',
+    //   translateX:60,
+    //   easing:easing,
+    //   duration:durationLayers
+    // });
     clickedLayer001 = true;
   }
   else if (clickedLayer001) {
@@ -163,8 +170,10 @@ $(".button001").click(function() {
     $(".layer006").css("visibility", "visible");
     $(".layer007").css("visibility", "visible");
 
+    $(".info001").css("display", "none");
+
     $(".layer001").css({borderBottom: 'solid #000 0vw'});
-    
+
     var moveLayer001 = anime({
       targets: '.layer001',
       translateY: "0",
@@ -185,6 +194,12 @@ $(".button001").click(function() {
       easing:easing,
       duration:durationLayers
     });
+    // var childOne = anime({
+    //   targets: '.layer001 li:nth-child(1)',
+    //   translateX:0,
+    //   easing:easing,
+    //   duration:durationLayers
+    // });
     clickedLayer001 = false;
   }
 })
@@ -209,7 +224,7 @@ $(".button002").click(function() {
      }, 500);
     var moveLayer002 = anime({
       targets: '.layer002',
-      translateY: "-225%",
+      translateY: "-230%",
       easing:easing,
       duration:durationLayers,
     });
