@@ -15,33 +15,35 @@ var h = Math.floor(Math.random()*361);
 var s =Math.floor(Math.random()*101);
 var layerFadeIn = 750;
 
-var color001 = 'hsl(' + h + ',' + s + '%, 50%)';
-var color002 = 'hsl(' + h + ',' + s + '%, 56.7%)';
-var color003 = 'hsl(' + h + ',' + s + '%, 62.4%)';
-var color004 = 'hsl(' + h + ',' + s + '%, 69.1%)';
-var color005 = 'hsl(' + h + ',' + s + '%, 75.8%)';
-var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
-var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
-// var x = Math.floor(Math.random()*2);
-// console.log(x);
-// if (x == 0) {
-//   var color001 = 'hsl(' + h + ',' + s + '%, 50%)';
-//   var color002 = 'hsl(' + h + ',' + s + '%, 56.7%)';
-//   var color003 = 'hsl(' + h + ',' + s + '%, 62.4%)';
-//   var color004 = 'hsl(' + h + ',' + s + '%, 69.1%)';
-//   var color005 = 'hsl(' + h + ',' + s + '%, 75.8%)';
-//   var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
-//   var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
-// }
-// else if (x == 1) {
-//   var color001 = randomColorRGB();
-//   var color002 = randomColorRGB();
-//   var color003 = randomColorRGB();
-//   var color004 = randomColorRGB();
-//   var color005 = randomColorRGB();
-//   var color006 = randomColorRGB();
-//   var color007 = randomColorRGB();
-// }
+// var color001 = 'hsl(' + h + ',' + s + '%, 50%)';
+// var color002 = 'hsl(' + h + ',' + s + '%, 56.7%)';
+// var color003 = 'hsl(' + h + ',' + s + '%, 62.4%)';
+// var color004 = 'hsl(' + h + ',' + s + '%, 69.1%)';
+// var color005 = 'hsl(' + h + ',' + s + '%, 75.8%)';
+// var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
+// var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
+
+var x = Math.floor(Math.random()*11);
+console.log(x);
+if (x == 0 || x == 1 || x == 2 || x == 3 || x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9) {
+  var color001 = 'hsl(' + h + ',' + s + '%, 50%)';
+  var color002 = 'hsl(' + h + ',' + s + '%, 56.7%)';
+  var color003 = 'hsl(' + h + ',' + s + '%, 62.4%)';
+  var color004 = 'hsl(' + h + ',' + s + '%, 69.1%)';
+  var color005 = 'hsl(' + h + ',' + s + '%, 75.8%)';
+  var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
+  var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
+}
+else if (x == 10) {
+  console.log("ten");
+  var color001 = randomColorRGB();
+  var color002 = randomColorRGB();
+  var color003 = randomColorRGB();
+  var color004 = randomColorRGB();
+  var color005 = randomColorRGB();
+  var color006 = randomColorRGB();
+  var color007 = randomColorRGB();
+}
 
 window.onload = function() {
   var layer001 = anime({
@@ -139,6 +141,10 @@ dw_Tooltip.content_vars = {
 }
 /******** END TOOLTIP ********/
 
+$(".layer001, .layer002, .layer003, .layer004, .layer005, .layer006").click(function() {
+  // $(".title").css("visibility", "hidden");
+})
+
 /******** LAYER 001 ********/
 var clickedLayer001 = false;
 $(".layer001").click(function() {
@@ -167,7 +173,7 @@ $(".layer001").click(function() {
       backgroundColor: ['#FFF', color001],
       //delay: durationLayers * 2,
       easing:easing,
-      duration:durationColors,
+      duration:durationColors / 2,
       delay: layerFadeIn
     });
     var button = anime({
