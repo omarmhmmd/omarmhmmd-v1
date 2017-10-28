@@ -114,17 +114,17 @@ dw_Tooltip.content_vars = {
         h: 300 // height of image
     },
     L2: {
-        img: 'images/monolith.jpg',
+        img: 'images/monolith.JPG',
         w: 300, // width of image
         h: 200 // height of image
     },
     L3: {
-        img: 'images/qiblah.jpg',
+        img: 'images/qiblah.JPG',
         w: 300, // width of image
         h: 200 // height of image
     },
     L4: {
-        img: 'images/josefAlbersBot.jpg',
+        img: 'images/josefAlbersBot.JPG',
         w: 300, // width of image
         h: 200 // height of image
     },
