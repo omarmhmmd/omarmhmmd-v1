@@ -110,32 +110,32 @@ dw_Tooltip.defaultProps = {
 
 dw_Tooltip.content_vars = {
     L1: {
-        img: '/images/sfmomabathrooms.jpg',
+        img: 'images/sfmomabathrooms.jpg',
         w: 200, // width of image
         h: 300 // height of image
     },
     L2: {
-        img: '/images/monolith.jpg',
+        img: 'images/monolith.jpg',
         w: 300, // width of image
         h: 200 // height of image
     },
     L3: {
-        img: '/images/qiblah.jpg',
+        img: 'images/qiblah.jpg',
         w: 300, // width of image
         h: 200 // height of image
     },
     L4: {
-        img: '/images/josefAlbersBot.jpg',
+        img: 'images/josefAlbersBot.jpg',
         w: 300, // width of image
         h: 200 // height of image
     },
     L5: {
-        img: '/images/shade.jpg',
+        img: 'images/shade.jpg',
         w: 237.5, // width of image
         h: 300 // height of image
     },
     L6: {
-        img: '/images/BlackRose.png',
+        img: 'images/BlackRose.png',
         w: 225, // width of image
         h: 300 // height of image
     }
