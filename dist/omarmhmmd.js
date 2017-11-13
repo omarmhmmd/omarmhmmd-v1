@@ -160,23 +160,33 @@ $(".layer001").click(function() {
     $(".layer007").css("visibility", "hidden");
 
     $(".info001").css("display", "block");
+    //setTimeout(function(){   $(".layer001").css("position", "fixed"); }, 1000);
 
     $(".layer001").css({borderBottom: 'solid #000 0.15vw'});
 
+    var info = anime({
+      targets: '.info001',
+      easing:easing,
+      duration:durationLayers,
+    });
     var moveLayer001 = anime({
       targets: '.layer001',
       translateY: "-130%",
       easing:easing,
       duration:durationLayers,
     });
-    var bgColor001 = anime({
-      targets: 'body',
-      backgroundColor: ['#FFF', color001],
-      //delay: durationLayers * 2,
-      easing:easing,
-      duration:durationColors / 2,
-      delay: layerFadeIn
-    });
+    $(".layer001").css("position", "fixed");
+    $(".layer001").css("top", "18.55%");
+    $(".layer001").css("width", "100%");
+    $(".info001").css("margin-top", "-3%");
+    // var bgColor001 = anime({
+    //   targets: 'body',
+    //   // backgroundColor: ['#FFF', color001],
+    //   //delay: durationLayers * 2,
+    //   easing:easing,
+    //   duration:durationColors / 2,
+    //   delay: layerFadeIn
+    // });
     var button = anime({
       targets: '.button001',
       rotate: 45,
@@ -199,7 +209,8 @@ $(".layer001").click(function() {
     $(".layer007").css("visibility", "visible");
 
 
-    $(".info001").fadeOut(500);
+    // $(".info001").fadeOut(500);
+    $(".info001").css("display", "none");
 
     $(".layer001").css({borderBottom: 'solid #000 0vw'});
 
@@ -209,14 +220,14 @@ $(".layer001").click(function() {
       easing:easing,
       duration:durationLayers,
     });
-    var bgColor001 = anime({
-      targets: 'body',
-      backgroundColor: [color001, '#FFF'],
-      //delay: durationLayers * 2,
-      easing:easing,
-      duration:durationColors / 2,
-      delay: layerFadeIn
-    });
+    // var bgColor001 = anime({
+    //   targets: 'body',
+    //   backgroundColor: ['#FFF', '#FFF'],
+    //   //delay: durationLayers * 2,
+    //   easing:easing,
+    //   duration:durationColors / 2,
+    //   delay: layerFadeIn
+    // });
     var button = anime({
       targets: '.button001',
       rotate: -90,

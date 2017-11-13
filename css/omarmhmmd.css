@@ -53,10 +53,11 @@ html {
 /******** HEADERS ********/
 .title {
   padding: 2.5% 0 0 5%;
+  z-index: -10;
 }
 
 .title h1 {
-  font-size: 1.75vw;
+  font-size: 2vw;
   /*font-size: 1.75em;*/
   line-height: 140%;
   width: 95%;
@@ -84,7 +85,7 @@ html {
 
 ul {
   list-style-type: none;
-  padding: 2.5% 0 4.75% 5%;
+  padding: 2.75% 0 5% 5%;
   font-size: 1.75vw;
   /*font-size: 1.75em;*/
 }
@@ -98,7 +99,7 @@ ul {
   /******** INFO001 ********/
   .info001 {
     display: none;
-    margin: -9.5% 0 0 0%;
+    margin: 0% 0 0 0%;
     letter-spacing: 0.025vw;
   }
   .info001 li {
