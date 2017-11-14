@@ -57,7 +57,8 @@ html {
 }
 
 .title h1 {
-  font-size: 2vw;
+  display: block;
+  font-size: 2.125vw;
   /*font-size: 1.75em;*/
   line-height: 140%;
   width: 95%;
@@ -85,7 +86,7 @@ html {
 
 ul {
   list-style-type: none;
-  padding: 2.75% 0 5% 5%;
+  padding: 2.20% 0 4.25% 5%;
   font-size: 1.75vw;
   /*font-size: 1.75em;*/
 }
@@ -94,12 +95,12 @@ ul {
 .layer001 li:nth-child(2) {
   position: absolute;
   /*padding-left: 73%;*/
-  padding-left:65%;
+  padding-left:65.25%;
 }
   /******** INFO001 ********/
   .info001 {
     display: none;
-    margin: 0% 0 0 0%;
+    margin: -10.75% 0 0 0%;
     letter-spacing: 0.025vw;
   }
   .info001 li {
@@ -112,7 +113,7 @@ ul {
     line-height: normal;
     font-size: 1.25vw;
     color: black;
-    z-index: -1;
+    z-index: -10;
   }
 
   .info001 p span{
@@ -140,7 +141,7 @@ ul {
 
   .info001 img {
     width: 90%;
-    padding: 10.5% 0 0 5%;
+    margin: 9% 0 0 5%;
   }
   /******** END INFO ********/
 /******** LAYER 001 ********/

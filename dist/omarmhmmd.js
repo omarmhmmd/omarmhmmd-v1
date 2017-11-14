@@ -159,8 +159,10 @@ $(".layer001").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
-    $(".info001").css("display", "block");
-    //setTimeout(function(){   $(".layer001").css("position", "fixed"); }, 1000);
+
+    // $(".info001").css("display", "block");
+    setTimeout(function(){ $(".info001").css("display", "block"); }, 300);
+    setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 750);
 
     $(".layer001").css({borderBottom: 'solid #000 0.15vw'});
 
@@ -171,14 +173,10 @@ $(".layer001").click(function() {
     });
     var moveLayer001 = anime({
       targets: '.layer001',
-      translateY: "-130%",
+      translateY: "-156%",
       easing:easing,
       duration:durationLayers,
     });
-    $(".layer001").css("position", "fixed");
-    $(".layer001").css("top", "18.55%");
-    $(".layer001").css("width", "100%");
-    $(".info001").css("margin-top", "-3%");
     // var bgColor001 = anime({
     //   targets: 'body',
     //   // backgroundColor: ['#FFF', color001],
@@ -208,6 +206,7 @@ $(".layer001").click(function() {
     $(".layer006").css("visibility", "visible");
     $(".layer007").css("visibility", "visible");
 
+    setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
 
     // $(".info001").fadeOut(500);
     $(".info001").css("display", "none");
