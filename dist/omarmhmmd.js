@@ -173,7 +173,7 @@ $(".layer001").click(function() {
     });
     var moveLayer001 = anime({
       targets: '.layer001',
-      translateY: "-156%",
+      translateY: "-163%",
       easing:easing,
       duration:durationLayers,
     });
