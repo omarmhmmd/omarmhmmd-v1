@@ -20,10 +20,18 @@ button {
 a {
   text-decoration: none;
   color: black;
-  cursor: default;
+  cursor: pointer;
+  font-family: "nh65";
+}
+a:hover {
+  text-decoration: underline;
 }
 
 
+ul h1 {
+  font-family: "nh65";
+  font-size: 3vw;
+}
 /******** END RESET ********/
 
 /******** FONTS ********/
@@ -103,7 +111,7 @@ ul {
     margin: -10.75% 0 0 0%;
     letter-spacing: 0.025vw;
   }
-  .info001 li {
+  .info001 li  {
     list-style-type: none;
     position: absolute;
     background-color: ;
@@ -113,9 +121,12 @@ ul {
     line-height: normal;
     font-size: 1.25vw;
     color: black;
-    z-index: -10;
   }
 
+  p {
+    font-size: 1.25vw;
+    color: black;
+  }
   .info001 p span{
     font-family: 'nh65';
   }
@@ -139,9 +150,12 @@ ul {
     padding-left:73.25%;
   }
 
-  .info001 img {
-    width: 90%;
-    margin: 9% 0 0 5%;
+  .info001Video {
+    margin: 10% 0 0 6%;
+  }
+
+  .info001Img {
+    margin: 0% 0 0 6%;
   }
   /******** END INFO ********/
 /******** LAYER 001 ********/
