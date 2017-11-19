@@ -150,16 +150,25 @@ ul {
     padding-left:73.25%;
   }
 
-  .info001Video {
-    margin: 10% 0 0 6%;
-  }
-
   .info001Img {
     margin: 0% 0 0 6%;
   }
-  /******** END INFO ********/
-/******** LAYER 001 ********/
 
+  .info001ImgLast {
+    margin: 0% 3% 0 6%;
+  }
+
+  .info001Vid {
+    margin: 0% 0 0 6%;
+  }
+
+  .info001VidLast {
+    margin: 0% 3% 0 6%;
+  }
+  /******** END INFO ********/
+/******** END LAYER 001 ********/
+
+/******** MENU/LAYERS ********/
 .layer002 li:nth-child(2) {
   position: absolute;
   padding-left: 66%;
@@ -195,10 +204,11 @@ ul {
 }
 /******** END MENU/LAYERS ********/
 
+/******* HORIZONTAL SCROLL *******/
 .noScroll {
    /*height: 40vw;*/
    height: 100%;
-   width: 100%;
+   width: 97%;
    overflow: hidden;
 }
 
@@ -211,13 +221,20 @@ ul {
 }
 
 .promo::-webkit-scrollbar {
-    height: 5px;
-    background-color: none;
-    padding-right: 1000px;
+  height: 5px;
+  background-color: none;
+  padding-right: 1000px;
 }
 
 .promo::-webkit-scrollbar-thumb {
     background-color: #000000;
     height: 1px;
     opacity: 0.1;
+}
+/******* END HORIZONTAL SCROLL *******/
+
+/******** CENTER ********/
+.centerInfo {
+  margin-top: 10%;
+  text-align:center;
 }
