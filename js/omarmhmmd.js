@@ -1,5 +1,5 @@
-var randomColorRGB = require('random-color-rgb');
-randomColorRGB();
+// var randomColorRGB = require('random-color-rgb');
+// randomColorRGB();
 
 /******** LAYER COLORS ********/
 var x = document.getElementsByClassName("layers");
@@ -109,35 +109,35 @@ dw_Tooltip.defaultProps = {
 
 dw_Tooltip.content_vars = {
     L1: {
-        img: 'images/sfmomabathrooms.jpg',
-        w: 200, // width of image
-        h: 300 // height of image
+        img: 'images/sfmomaLogo.png',
+        w: 250 // width of image
+        // height of image
     },
-    L2: {
-        img: 'images/monolith.JPG',
-        w: 300, // width of image
-        h: 200 // height of image
-    },
-    L3: {
-        img: 'images/qiblah.JPG',
-        w: 300, // width of image
-        h: 200 // height of image
-    },
-    L4: {
-        img: 'images/josefAlbersBot.JPG',
-        w: 300, // width of image
-        h: 200 // height of image
-    },
-    L5: {
-        img: 'images/shade.jpg',
-        w: 237.5, // width of image
-        h: 300 // height of image
-    },
-    L6: {
-        img: 'images/BlackRose.png',
-        w: 225, // width of image
-        h: 300 // height of image
-    }
+    // L2: {
+    //     img: 'images/monolith.JPG',
+    //     w: 300, // width of image
+    //     h: 200 // height of image
+    // },
+    // L3: {
+    //     img: 'images/qiblah.JPG',
+    //     w: 300, // width of image
+    //     h: 200 // height of image
+    // },
+    // L4: {
+    //     img: 'images/josefAlbersBot.JPG',
+    //     w: 300, // width of image
+    //     h: 200 // height of image
+    // },
+    // L5: {
+    //     img: 'images/shade.jpg',
+    //     w: 237.5, // width of image
+    //     h: 300 // height of image
+    // },
+    // L6: {
+    //     img: 'images/BlackRose.png',
+    //     w: 225, // width of image
+    //     h: 300 // height of image
+    // }
 }
 /******** END TOOLTIP ********/
 
