@@ -155,7 +155,7 @@ ul {
   }
 
   .info001ImgLast {
-    margin: 0% 3% 0 6%;
+    margin: 0% 0 0 6%;
   }
 
   .info001Vid {
@@ -208,12 +208,14 @@ ul {
 .noScroll {
    /*height: 40vw;*/
    height: 100%;
-   width: 97%;
+   width: 79.5%;
    overflow: hidden;
 }
 
 .promo {
-  height: 120%;
+  height: 50%;
+  text-align: center;
+
   width: 100%;
 	overflow-x: auto;
   white-space: nowrap;
@@ -221,20 +223,30 @@ ul {
 }
 
 .promo::-webkit-scrollbar {
-  height: 5px;
+  height: 2vh;
   background-color: none;
   padding-right: 1000px;
 }
 
 .promo::-webkit-scrollbar-thumb {
-    background-color: #000000;
-    height: 1px;
-    opacity: 0.1;
+  border: 2px solid black;
+  height: 1px;
+  opacity: 0.1;
+  border-radius: 5px;
 }
 /******* END HORIZONTAL SCROLL *******/
 
 /******** CENTER ********/
 .centerInfo {
-  margin-top: 10%;
-  text-align:center;
+  margin-top: 11%;
+  text-align: center;
+}
+
+.centerInfo .noScroll{
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+.zine img {
+  width: 80%;
 }

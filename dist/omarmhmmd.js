@@ -159,6 +159,8 @@ $(".layer001").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
+    $(".promo::-webkit-scrollbar-thumb").css("backgroundColor", "green");
+
 
     $(".info001").fadeIn(2500);
     // setTimeout(function(){ $(".info001").css("display", "block"); }, 1750);
