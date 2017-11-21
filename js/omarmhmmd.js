@@ -110,7 +110,7 @@ dw_Tooltip.defaultProps = {
 dw_Tooltip.content_vars = {
     L1: {
         img: 'images/sfmomaLogo.png',
-        w: 250 // width of image
+        w: 300 // width of image
         // height of image
     },
     // L2: {
@@ -123,11 +123,10 @@ dw_Tooltip.content_vars = {
     //     w: 300, // width of image
     //     h: 200 // height of image
     // },
-    // L4: {
-    //     img: 'images/josefAlbersBot.JPG',
-    //     w: 300, // width of image
-    //     h: 200 // height of image
-    // },
+    L4: {
+        img: 'portfolio/josefAlbersBot/icon.png',
+        w: 300, // width of image
+    },
     // L5: {
     //     img: 'images/shade.jpg',
     //     w: 237.5, // width of image
@@ -157,9 +156,6 @@ $(".layer001").click(function() {
     $(".layer005").css("visibility", "hidden");
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
-
-    $(".promo::-webkit-scrollbar-thumb").css("backgroundColor", "green");
-
 
     $(".info001").fadeIn(2500);
     // setTimeout(function(){ $(".info001").css("display", "block"); }, 1750);
@@ -411,12 +407,13 @@ $(".layer004").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
-    $(".layer004").css({borderBottom: 'solid #000 0.15vw'}).animate({
-         borderWidth: "0.15vw"
-     }, 500);
+    setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 750);
+
+    $(".layer004").css({borderBottom: 'solid #000 0.15vw'});
+
     var moveLayer004 = anime({
       targets: '.layer004',
-      translateY: "-425%",
+      translateY: "-455.5%",
       easing:easing,
       duration:durationLayers,
     });
@@ -447,9 +444,10 @@ $(".layer004").click(function() {
     $(".layer006").css("visibility", "visible");
     $(".layer007").css("visibility", "visible");
 
-    $(".layer004").css({borderBottom: 'solid #000 0vw'}).animate({
-         borderWidth: "0vw"
-     }, 500);
+    setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
+
+    $(".layer004").css({borderBottom: 'solid #000 0vw'});
+
     var moveLayer004 = anime({
       targets: '.layer004',
       translateY: "0",
