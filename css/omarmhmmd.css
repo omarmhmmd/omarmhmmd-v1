@@ -225,14 +225,14 @@ ul {
 .promo::-webkit-scrollbar {
   height: 1.5vh;
   background-color: none;
-  padding-right: 1000px;
+  /*padding-right: 10000px;*/
 }
 
 .promo::-webkit-scrollbar-thumb {
   border: 2px solid black;
   height: 1px;
   opacity: 0.1;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 /******* END HORIZONTAL SCROLL *******/
 
