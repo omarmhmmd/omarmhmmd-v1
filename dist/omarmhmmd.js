@@ -408,15 +408,17 @@ $(".layer004").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
-    setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 750);
+    $(".info004").fadeIn(3250);
+
+    setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 1200);
 
     $(".layer004").css({borderBottom: 'solid #000 0.15vw'});
 
     var moveLayer004 = anime({
       targets: '.layer004',
-      translateY: "-455.5%",
+      translateY: "-457%",
       easing:easing,
-      duration:durationLayers,
+      duration:durationLayers * 1.5,
     });
     var bgColor004 = anime({
       targets: 'body',
@@ -445,6 +447,8 @@ $(".layer004").click(function() {
     $(".layer006").css("visibility", "visible");
     $(".layer007").css("visibility", "visible");
 
+    $(".info004").css("display", "none");
+
     setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
 
     $(".layer004").css({borderBottom: 'solid #000 0vw'});
@@ -453,7 +457,7 @@ $(".layer004").click(function() {
       targets: '.layer004',
       translateY: "0",
       easing:easing,
-      duration:durationLayers,
+      duration:durationLayers * 1.5,
     });
     var bgColor004 = anime({
       targets: 'body',

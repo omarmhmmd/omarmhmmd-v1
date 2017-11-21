@@ -16,22 +16,6 @@ button {
     cursor: pointer;
     outline:none;
 }
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  font-family: "nh65";
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul h1 {
-  font-family: "nh65";
-  font-size: 3vw;
-}
 /******** END RESET ********/
 
 /******** FONTS ********/
@@ -52,13 +36,41 @@ html {
   /*background-color: black;
   color: white;*/
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-family: "nh65";
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2.20% 0 4.25% 5%;
+  font-size: 1.75vw;
+  /*font-size: 1.75em;*/
+}
+
+ul h1 {
+  font-family: "nh65";
+  font-size: 3vw;
+}
+
+p {
+  font-size: 1.25vw;
+  color: black;
+}
 /******** END BODY ********/
 .container {
   height: 100%;
   width: 100%;
 }
 
-/******** HEADERS ********/
+/******** HEADER ********/
 .title {
   padding: 2.5% 0 0 5%;
   z-index: -10;
@@ -71,8 +83,7 @@ html {
   line-height: 140%;
   width: 95%;
 }
-
-/******** END HEADERS ********/
+/******** END HEADER ********/
 
 /******** MENU/LAYERS ********/
 .menu {
@@ -92,12 +103,58 @@ html {
   padding-left: 88%;
 }
 
-ul {
+/******** INFO ********/
+.info li  {
   list-style-type: none;
-  padding: 2.20% 0 4.25% 5%;
-  font-size: 1.75vw;
-  /*font-size: 1.75em;*/
+  position: absolute;
+  background-color: ;
+  font-family: 'nh55';
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.25vw;
+  color: black;
 }
+
+.info p span{
+  font-family: 'nh65';
+}
+
+.info li:nth-child(1) {
+  width: 34%;
+  height: 10%;
+}
+
+.info li:nth-child(2) {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  padding-left: 44.5%;
+}
+
+.info li:nth-child(3) {
+  width: 17%;
+  height: 20%;
+  position: absolute;
+  padding-left:73.25%;
+}
+
+.infoImg {
+  margin: 0% 0 0 6%;
+}
+
+.infoImgLast {
+  margin: 0% 0 0 6%;
+}
+
+.infoVid {
+  margin: 0% 0 0 6%;
+}
+
+.infoVidLast {
+  margin: 0% 3% 0 6%;
+}
+/******** END INFO ********/
 
 /******** LAYER 001 ********/
 .layer001 li:nth-child(2) {
@@ -105,70 +162,23 @@ ul {
   /*padding-left: 73%;*/
   padding-left:65.25%;
 }
-  /******** INFO001 ********/
+  /******** INFO 001 ********/
   .info001 {
     display: none;
     margin: -10.75% 0 0 0%;
     letter-spacing: 0.025vw;
   }
-  .info001 li  {
-    list-style-type: none;
-    position: absolute;
-    background-color: ;
-    font-family: 'nh55';
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 1.25vw;
-    color: black;
+
+  .zine img {
+    width: 80%;
   }
 
-  p {
-    font-size: 1.25vw;
-    color: black;
+  .handOut img {
+    width: 47%;
   }
-  .info001 p span{
-    font-family: 'nh65';
-  }
-
-  .info001 li:nth-child(1) {
-    width: 34%;
-    height: 10%;
-  }
-
-  .info001 li:nth-child(2) {
-    width: 20%;
-    height: 20%;
-    position: absolute;
-    padding-left: 44.5%;
-  }
-
-  .info001 li:nth-child(3) {
-    width: 17%;
-    height: 20%;
-    position: absolute;
-    padding-left:73.25%;
-  }
-
-  .info001Img {
-    margin: 0% 0 0 6%;
-  }
-
-  .info001ImgLast {
-    margin: 0% 0 0 6%;
-  }
-
-  .info001Vid {
-    margin: 0% 0 0 6%;
-  }
-
-  .info001VidLast {
-    margin: 0% 3% 0 6%;
-  }
-  /******** END INFO ********/
+  /******** END INFO 001 ********/
 /******** END LAYER 001 ********/
 
-/******** MENU/LAYERS ********/
 .layer002 li:nth-child(2) {
   position: absolute;
   padding-left: 66%;
@@ -179,10 +189,19 @@ ul {
   padding-left: 68.5%;
 }
 
+/******** LAYER 004 ********/
 .layer004 li:nth-child(2) {
   position: absolute;
   padding-left: 62%;
 }
+  /******** INFO 004 ********/
+  .info004 {
+    display: none;
+    margin: -30.5% 0 0% 0%;
+    letter-spacing: 0.025vw;
+  }
+  /******** END INFO 004 ********/
+/******** END LAYER 004 ********/
 
 .layer005 li:nth-child(2) {
   position: absolute;
@@ -204,11 +223,42 @@ ul {
 }
 /******** END MENU/LAYERS ********/
 
+/******** CENTER DIV ********/
+  /******** CENTER 001 ********/
+  .centerInfo001 {
+    margin-top: 12.5%;
+    text-align: center;
+  }
+  /******** END CENTER 001 ********/
+
+  /******** CENTER 004 ********/
+  .centerInfo004 {
+    margin-top: 16%;
+    text-align: center;
+  }
+
+  .centerInfo004 img:nth-child(1) {
+    margin-top: -8%;
+    width: 80%;
+  }
+
+  .centerInfo004 img {
+    width: 60%;
+  }
+
+  #josefLogo {
+    width: 50%;
+  }
+  /******** END CENTER 004 ********/
+/******** END CENTER DIV ********/
+
+
 /******* HORIZONTAL SCROLL *******/
 .noScroll {
    /*height: 40vw;*/
    height: 100%;
    width: 79.5%;
+   margin-left: 10%;
    overflow: hidden;
 }
 
@@ -235,22 +285,3 @@ ul {
   /*border-radius: 5px;*/
 }
 /******* END HORIZONTAL SCROLL *******/
-
-/******** CENTER ********/
-.centerInfo {
-  margin-top: 11%;
-  text-align: center;
-}
-
-.centerInfo .noScroll{
-  margin-left: 10%;
-  overflow: hidden;
-}
-
-.zine img {
-  width: 80%;
-}
-
-.handOut img {
-  width: 47%;
-}
