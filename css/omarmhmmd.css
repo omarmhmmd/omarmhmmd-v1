@@ -223,7 +223,7 @@ ul {
 }
 
 .promo::-webkit-scrollbar {
-  height: 2vh;
+  height: 1.5vh;
   background-color: none;
   padding-right: 1000px;
 }
@@ -249,4 +249,8 @@ ul {
 
 .zine img {
   width: 80%;
+}
+
+.handOut img {
+  width: 47%;
 }
