@@ -2,6 +2,45 @@
 var randomColorRGB = require('random-color-rgb');
 randomColorRGB();
 
+/******** TOOLTIP ********/
+dw_Tooltip.defaultProps = {
+    //supportTouch: true, // set false by default
+    wrapFn: dw_Tooltip.wrapImageToWidth
+}
+
+dw_Tooltip.content_vars = {
+    L1: {
+        img: 'images/sfmomaLogo.png',
+        w: 300 // width of image
+        // height of image
+    },
+    // L2: {
+    //     img: 'images/monolith.JPG',
+    //     w: 300, // width of image
+    //     h: 200 // height of image
+    // },
+    // L3: {
+    //     img: 'images/qiblah.JPG',
+    //     w: 300, // width of image
+    //     h: 200 // height of image
+    // },
+    L4: {
+        img: 'portfolio/josefAlbersBot/icon.png',
+        w: 300, // width of image
+    },
+    // L5: {
+    //     img: 'images/shade.jpg',
+    //     w: 237.5, // width of image
+    //     h: 300 // height of image
+    // },
+    // L6: {
+    //     img: 'images/BlackRose.png',
+    //     w: 225, // width of image
+    //     h: 300 // height of image
+    // }
+}
+/******** END TOOLTIP ********/
+
 /******** LAYER COLORS ********/
 var x = document.getElementsByClassName("layers");
 for (var i = 0; i < x.length; i++) {
@@ -99,45 +138,6 @@ else if (x == 10) {
     easing:easing
   });
 /******** END LAYER COLORS ********/
-
-/******** TOOLTIP ********/
-dw_Tooltip.defaultProps = {
-    //supportTouch: true, // set false by default
-    wrapFn: dw_Tooltip.wrapImageToWidth
-}
-
-dw_Tooltip.content_vars = {
-    L1: {
-        img: 'images/sfmomaLogo.png',
-        w: 300 // width of image
-        // height of image
-    },
-    // L2: {
-    //     img: 'images/monolith.JPG',
-    //     w: 300, // width of image
-    //     h: 200 // height of image
-    // },
-    // L3: {
-    //     img: 'images/qiblah.JPG',
-    //     w: 300, // width of image
-    //     h: 200 // height of image
-    // },
-    L4: {
-        img: 'portfolio/josefAlbersBot/icon.png',
-        w: 300, // width of image
-    },
-    // L5: {
-    //     img: 'images/shade.jpg',
-    //     w: 237.5, // width of image
-    //     h: 300 // height of image
-    // },
-    // L6: {
-    //     img: 'images/BlackRose.png',
-    //     w: 225, // width of image
-    //     h: 300 // height of image
-    // }
-}
-/******** END TOOLTIP ********/
 
 $(".layer001, .layer002, .layer003, .layer004, .layer005, .layer006").click(function() {
   // $(".title").css("visibility", "hidden");
