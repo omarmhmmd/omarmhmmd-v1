@@ -1,5 +1,5 @@
-// var randomColorRGB = require('random-color-rgb');
-// randomColorRGB();
+var randomColorRGB = require('random-color-rgb');
+randomColorRGB();
 
 /******** LAYER COLORS ********/
 var x = document.getElementsByClassName("layers");
@@ -45,7 +45,6 @@ else if (x == 10) {
   var color007 = randomColorRGB();
 }
 
-window.onload = function() {
   var layer001 = anime({
     targets: '.layer001',
     backgroundColor: color001,
@@ -98,7 +97,6 @@ window.onload = function() {
     delay:3500,
     easing:easing
   });
-}
 /******** END LAYER COLORS ********/
 
 /******** TOOLTIP ********/
