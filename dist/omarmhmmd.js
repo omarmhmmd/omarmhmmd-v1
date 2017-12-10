@@ -10,7 +10,7 @@ dw_Tooltip.defaultProps = {
 
 dw_Tooltip.content_vars = {
     L1: {
-        img: 'images/sfmomaLogo.png',
+        img: 'images/logoB&W.png',
         w: 300 // width of image
         // height of image
     },
@@ -328,12 +328,16 @@ $(".layer003").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
+    $(".info003").fadeIn(3250);
+
+    setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 800);
+
     $(".layer003").css({borderBottom: 'solid #000 0.15vw'}).animate({
          borderWidth: "0.15vw"
      }, 500);
     var moveLayer003 = anime({
       targets: '.layer003',
-      translateY: "-325%",
+      translateY: "-358%",
       easing:easing,
       duration:durationLayers,
     });
@@ -363,6 +367,10 @@ $(".layer003").click(function() {
     $(".layer005").css("visibility", "visible");
     $(".layer006").css("visibility", "visible");
     $(".layer007").css("visibility", "visible");
+
+    $(".info003").css("display", "none");
+
+    setTimeout(function(){ $(".title").css("visibility", "visible"); }, 200);
 
     $(".layer003").css({borderBottom: 'solid #000 0vw'}).animate({
          borderWidth: "0vw"
