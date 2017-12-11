@@ -236,7 +236,7 @@ p {
 /******** CENTER DIV ********/
   /******** CENTER 001 ********/
   .centerInfo001 {
-    margin-top: 12.5%;
+    margin-top: 9.5%;
     text-align: center;
   }
   /******** END CENTER 001 ********/
@@ -264,7 +264,7 @@ p {
   }
 
   .centerInfo004 img:nth-child(1) {
-    margin-top: -8%;
+    margin-top: -9%;
     width: 80%;
   }
 

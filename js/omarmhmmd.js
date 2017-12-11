@@ -18,11 +18,11 @@ dw_Tooltip.content_vars = {
     //     w: 300, // width of image
     //     h: 200 // height of image
     // },
-    // L3: {
-    //     img: 'images/qiblah.JPG',
-    //     w: 300, // width of image
-    //     h: 200 // height of image
-    // },
+    L3: {
+        img: 'images/qiblah.png',
+        w: 300, // width of image
+        h: 300 // height of image
+    },
     L4: {
         img: 'portfolio/josefAlbersBot/icon.png',
         w: 300, // width of image
