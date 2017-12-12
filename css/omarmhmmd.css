@@ -236,7 +236,7 @@ p {
 /******** CENTER DIV ********/
   /******** CENTER 001 ********/
   .centerInfo001 {
-    margin-top: 9.5%;
+    margin-top: 11.5%;
     text-align: center;
   }
   /******** END CENTER 001 ********/
@@ -247,13 +247,18 @@ p {
     text-align: center;
   }
 
-  .centerInfo003 img:nth-child(1) {
-    margin-top: -7%;
-    width: 80%;
+  .centerInfo003 iframe:nth-child(1) {
+    margin-top: -11%;
+    width: 1080px;
+    height:720px;
   }
 
   .centerInfo003 img {
     width: 80%;
+  }
+
+  .centerInfo003 .sketch {
+    width: 50%;
   }
   /******** END CENTER 003 ********/
 
@@ -315,3 +320,19 @@ p {
   /*border-radius: 5px;*/
 }
 /******* END HORIZONTAL SCROLL *******/
+
+/******** VIMEO RESPONSIVE ********/
+/*.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}*/
+/******** END VIMEO RESPONSIVE ********/
