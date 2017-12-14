@@ -260,7 +260,15 @@ p {
   }
 
   .centerInfo002 img {
-    width: 80%;
+    width: 70%;
+  }
+
+  .centerInfo002 video {
+    width: 70%;
+  }
+
+  .centerInfo002 .small {
+    width: 40%;
   }
   /******** END CENTER 002 ********/
 
@@ -291,6 +299,10 @@ p {
   }
 
   .centerInfo003 .sketch {
+    width: 50%;
+  }
+
+  .centerInfo003 .small {
     width: 50%;
   }
   /******** END CENTER 003 ********/
