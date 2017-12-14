@@ -236,7 +236,7 @@ p {
 /******** CENTER DIV ********/
   /******** CENTER 001 ********/
   .centerInfo001 {
-    margin-top: 11.5%;
+    margin-top: 8.5%;
     text-align: center;
   }
   /******** END CENTER 001 ********/
@@ -251,10 +251,20 @@ p {
     margin-top: -11%;
     width: 1080px;
     height:720px;
+    margin-bottom: -1.5%;
   }
+
+  .centerInfo003 .info {
+    width: 40%;
+  }
+
 
   .centerInfo003 img {
     width: 80%;
+  }
+
+  .centerInfo003 .terminal {
+    width: 50%;
   }
 
   .centerInfo003 .sketch {
@@ -300,7 +310,6 @@ p {
 .promo {
   height: 50%;
   text-align: center;
-
   width: 100%;
 	overflow-x: auto;
   white-space: nowrap;
