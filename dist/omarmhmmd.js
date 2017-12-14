@@ -14,11 +14,11 @@ dw_Tooltip.content_vars = {
         w: 300 // width of image
         // height of image
     },
-    // L2: {
-    //     img: 'images/monolith.JPG',
-    //     w: 300, // width of image
-    //     h: 200 // height of image
-    // },
+    L2: {
+        img: 'images/monolith.gif',
+        w: 300, // width of image
+        h: 300 // height of image
+    },
     L3: {
         img: 'images/qiblahLogo.png',
         w: 300, // width of image
@@ -250,12 +250,16 @@ $(".layer002").click(function() {
     $(".layer006").css("visibility", "hidden");
     $(".layer007").css("visibility", "hidden");
 
+    $(".info002").fadeIn(2500);
+
+    setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 750);
+
     $(".layer002").css({borderBottom: 'solid #000 0.15vw'}).animate({
          borderWidth: "0.15vw"
      }, 500);
     var moveLayer002 = anime({
       targets: '.layer002',
-      translateY: "-230%",
+      translateY: "-260%",
       easing:easing,
       duration:durationLayers,
     });
@@ -285,6 +289,10 @@ $(".layer002").click(function() {
     $(".layer005").css("visibility", "visible");
     $(".layer006").css("visibility", "visible");
     $(".layer007").css("visibility", "visible");
+
+    $(".info002").css("display", "none");
+
+    setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
 
     $(".layer002").css({borderBottom: 'solid #000 0vw'}).animate({
          borderWidth: "0vw"

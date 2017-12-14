@@ -179,10 +179,18 @@ p {
   /******** END INFO 001 ********/
 /******** END LAYER 001 ********/
 
+/******** LAYER 002 ********/
 .layer002 li:nth-child(2) {
   position: absolute;
   padding-left: 66%;
 }
+/******** INFO 003 ********/
+.info002 {
+  display: none;
+  margin: -17.5% 0 0% 0%;
+  letter-spacing: 0.025vw;
+}
+/******** END LAYER 002 ********/
 
 
 /******** LAYER 003 ********/
@@ -236,10 +244,25 @@ p {
 /******** CENTER DIV ********/
   /******** CENTER 001 ********/
   .centerInfo001 {
-    margin-top: 8.5%;
+    margin-top: 8.25%;
     text-align: center;
   }
   /******** END CENTER 001 ********/
+
+  /******** CENTER 002 ********/
+  .centerInfo002 {
+    margin-top: 9.75%;
+    text-align: center;
+  }
+
+  .centerInfo002 iframe:nth-child(1) {
+    margin-top: -1.75%;
+  }
+
+  .centerInfo002 img {
+    width: 80%;
+  }
+  /******** END CENTER 002 ********/
 
   /******** CENTER 003 ********/
   .centerInfo003 {
@@ -248,7 +271,7 @@ p {
   }
 
   .centerInfo003 iframe:nth-child(1) {
-    margin-top: -11%;
+    margin-top: -11.5%;
     width: 1080px;
     height:720px;
     margin-bottom: -1.5%;
@@ -279,7 +302,7 @@ p {
   }
 
   .centerInfo004 img:nth-child(1) {
-    margin-top: -9%;
+    margin-top: -10.75%;
     width: 80%;
   }
 
