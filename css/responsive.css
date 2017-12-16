@@ -1,19 +1,18 @@
 @media only screen and (max-width: 500px) {
-  html {
+  /* html {
     overflow: hidden;
   }
   ul {
     padding-bottom: 23.5%;
-  }
+  } */
   .title h1 {
     font-size: 4vh;
-    position: absolute;
     line-height: 175%;
   }
-  .menu {
+  /* .menu {
     margin-top: -2.5%;
   }
   .layers ul {
     visibility: hidden;
-  }
+  } */
 }
