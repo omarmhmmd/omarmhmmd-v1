@@ -3,12 +3,12 @@
     overflow: hidden;
   }
   ul {
-    padding-bottom: 23.5%;
+    padding-bottom: 20.75%;
   }
   .title h1 {
     font-size: 4vh;
     position: absolute;
-    line-height: 310%;
+    line-height: 300%;
     width: 90%;
   }
   .menu {
