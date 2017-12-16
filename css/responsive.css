@@ -8,8 +8,8 @@
   .title h1 {
     font-size: 4vh;
     position: absolute;
-    line-height: 310%;
     width: 90%;
+    line-height: 175%;
   }
   .menu {
     margin-top: -2.5%;
