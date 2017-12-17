@@ -597,7 +597,7 @@ if($(window).width() > $(window).height()) {
 
       setTimeout( function(){
         $(".title").css('visibility','hidden');
-      },800);
+      },1200);
 
       $(".layer006").css({borderBottom: 'solid #000 0.15vw'}).animate({
            borderWidth: "0.15vw"
@@ -606,7 +606,7 @@ if($(window).width() > $(window).height()) {
         targets: '.layer006',
         translateY: "-651%",
         easing:easing,
-        duration:durationLayers,
+        duration:durationLayers * 1.5,
       });
       var bgColor006 = anime({
         targets: 'body',
@@ -637,7 +637,7 @@ if($(window).width() > $(window).height()) {
 
       $(".info006").css("display", "none");
 
-      setTimeout(function(){ $(".title").css("visibility", "visible"); }, 100);
+      setTimeout(function(){ $(".title").css("visibility", "visible"); }, 200);
 
       $(".layer006").css({borderBottom: 'solid #000 0vw'}).animate({
            borderWidth: "0vw"
@@ -646,7 +646,7 @@ if($(window).width() > $(window).height()) {
         targets: '.layer006',
         translateY: "0",
         easing:easing,
-        duration:durationLayers,
+        duration:durationLayers * 1.5,
       });
       var bgColor006 = anime({
         targets: 'body',
