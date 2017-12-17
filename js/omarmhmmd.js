@@ -27,16 +27,16 @@ dw_Tooltip.content_vars = {
         img: 'images/albersLogo.png',
         w: 300, // width of image
     },
-    // L5: {
-    //     img: 'images/shade.jpg',
-    //     w: 237.5, // width of image
-    //     h: 300 // height of image
-    // },
-    // L6: {
-    //     img: 'images/BlackRose.png',
-    //     w: 225, // width of image
-    //     h: 300 // height of image
-    // }
+    L5: {
+        img: 'images/shade.gif',
+        w: 300, // width of image
+        h: 300 // height of image
+    },
+    L6: {
+        img: 'images/about.png',
+        w: 300, // width of image
+        h: 300 // height of image
+    }
 }
 /******** END TOOLTIP ********/
 
@@ -501,83 +501,83 @@ if($(window).width() > $(window).height()) {
   })
   /******** END LAYER 004 ********/
 
-  /******** LAYER 005 ********/
-  var clickedLayer005 = false;
-  $(".layer005").click(function() {
-    console.log("layer005 Clicked");
-    if (!clickedLayer005) {
-      $(".layer005").removeClass("L5");
-      $(".layer001").css("visibility", "hidden");
-      $(".layer002").css("visibility", "hidden");
-      $(".layer003").css("visibility", "hidden");
-      $(".layer004").css("visibility", "hidden");
-      $(".layer006").css("visibility", "hidden");
-      $(".layer007").css("visibility", "hidden");
-
-      $(".layer005").css({borderBottom: 'solid #000 0.15vw'}).animate({
-           borderWidth: "0.15vw"
-       }, 500);
-      var moveLayer005 = anime({
-        targets: '.layer005',
-        translateY: "-525%",
-        easing:easing,
-        duration:durationLayers,
-      });
-      var bgColor005 = anime({
-        targets: 'body',
-        backgroundColor: ['#FFF', color005],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
-      var button = anime({
-        targets: '.button005',
-        rotate: 45,
-        scale: 1.25,
-        easing:easing,
-        duration:durationLayers
-      });
-      clickedLayer005 = true;
-    }
-    else if (clickedLayer005) {
-      console.log("back from 005");
-      $(".layer005").addClass("L5");
-      $(".layer001").css("visibility", "visible");
-      $(".layer002").css("visibility", "visible");
-      $(".layer003").css("visibility", "visible");
-      $(".layer004").css("visibility", "visible");
-      $(".layer006").css("visibility", "visible");
-      $(".layer007").css("visibility", "visible");
-
-      $(".layer005").css({borderBottom: 'solid #000 0vw'}).animate({
-           borderWidth: "0vw"
-       }, 500);
-      var moveLayer005 = anime({
-        targets: '.layer005',
-        translateY: "0",
-        easing:easing,
-        duration:durationLayers,
-      });
-      var bgColor005 = anime({
-        targets: 'body',
-        backgroundColor: [color005, '#FFF'],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
-      var button = anime({
-        targets: '.button005',
-        rotate: -90,
-        scale: 1,
-        easing:easing,
-        duration:durationLayers
-      });
-      clickedLayer005 = false;
-    }
-  })
-  /******** END LAYER 005 ********/
+  // /******** LAYER 005 ********/
+  // var clickedLayer005 = false;
+  // $(".layer005").click(function() {
+  //   console.log("layer005 Clicked");
+  //   if (!clickedLayer005) {
+  //     $(".layer005").removeClass("L5");
+  //     $(".layer001").css("visibility", "hidden");
+  //     $(".layer002").css("visibility", "hidden");
+  //     $(".layer003").css("visibility", "hidden");
+  //     $(".layer004").css("visibility", "hidden");
+  //     $(".layer006").css("visibility", "hidden");
+  //     $(".layer007").css("visibility", "hidden");
+  //
+  //     $(".layer005").css({borderBottom: 'solid #000 0.15vw'}).animate({
+  //          borderWidth: "0.15vw"
+  //      }, 500);
+  //     var moveLayer005 = anime({
+  //       targets: '.layer005',
+  //       translateY: "-525%",
+  //       easing:easing,
+  //       duration:durationLayers,
+  //     });
+  //     var bgColor005 = anime({
+  //       targets: 'body',
+  //       backgroundColor: ['#FFF', color005],
+  //       //delay: durationLayers * 2,
+  //       easing:easing,
+  //       duration:durationColors / 2,
+  //       delay: layerFadeIn
+  //     });
+  //     var button = anime({
+  //       targets: '.button005',
+  //       rotate: 45,
+  //       scale: 1.25,
+  //       easing:easing,
+  //       duration:durationLayers
+  //     });
+  //     clickedLayer005 = true;
+  //   }
+  //   else if (clickedLayer005) {
+  //     console.log("back from 005");
+  //     $(".layer005").addClass("L5");
+  //     $(".layer001").css("visibility", "visible");
+  //     $(".layer002").css("visibility", "visible");
+  //     $(".layer003").css("visibility", "visible");
+  //     $(".layer004").css("visibility", "visible");
+  //     $(".layer006").css("visibility", "visible");
+  //     $(".layer007").css("visibility", "visible");
+  //
+  //     $(".layer005").css({borderBottom: 'solid #000 0vw'}).animate({
+  //          borderWidth: "0vw"
+  //      }, 500);
+  //     var moveLayer005 = anime({
+  //       targets: '.layer005',
+  //       translateY: "0",
+  //       easing:easing,
+  //       duration:durationLayers,
+  //     });
+  //     var bgColor005 = anime({
+  //       targets: 'body',
+  //       backgroundColor: [color005, '#FFF'],
+  //       //delay: durationLayers * 2,
+  //       easing:easing,
+  //       duration:durationColors / 2,
+  //       delay: layerFadeIn
+  //     });
+  //     var button = anime({
+  //       targets: '.button005',
+  //       rotate: -90,
+  //       scale: 1,
+  //       easing:easing,
+  //       duration:durationLayers
+  //     });
+  //     clickedLayer005 = false;
+  //   }
+  // })
+  // /******** END LAYER 005 ********/
 
   /******** LAYER 006 ********/
   var clickedLayer006 = false;
@@ -591,6 +591,9 @@ if($(window).width() > $(window).height()) {
       $(".layer004").css("visibility", "hidden");
       $(".layer005").css("visibility", "hidden");
       $(".layer007").css("visibility", "hidden");
+
+      $(".info006").fadeIn(3250);
+
       setTimeout( function(){
         $(".title").css('visibility','hidden');
       },800);
@@ -600,7 +603,7 @@ if($(window).width() > $(window).height()) {
        }, 500);
       var moveLayer006 = anime({
         targets: '.layer006',
-        translateY: "-625%",
+        translateY: "-651%",
         easing:easing,
         duration:durationLayers,
       });
@@ -630,7 +633,10 @@ if($(window).width() > $(window).height()) {
       $(".layer004").css("visibility", "visible");
       $(".layer005").css("visibility", "visible");
       $(".layer007").css("visibility", "visible");
-      $(".title").css("visibility", "visible");
+
+      $(".info006").css("display", "none");
+
+      setTimeout(function(){ $(".title").css("visibility", "visible"); }, 100);
 
       $(".layer006").css({borderBottom: 'solid #000 0vw'}).animate({
            borderWidth: "0vw"

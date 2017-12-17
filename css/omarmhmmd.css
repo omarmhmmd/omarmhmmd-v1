@@ -221,15 +221,28 @@ p {
   /******** END INFO 004 ********/
 /******** END LAYER 004 ********/
 
+.layer005 {
+  cursor: default !important;
+}
+
 .layer005 li:nth-child(2) {
   position: absolute;
   padding-left: 68%;
 }
 
+/******** LAYER 006 ********/
 .layer006 li:nth-child(2) {
   position: absolute;
   padding-left: 70%;
 }
+  /******** INFO 006 ********/
+  .info006 {
+    display: none;
+    margin: -43% 0 0% 0%;
+    letter-spacing: 0.025vw;
+  }
+  /******** END INFO 006 ********/
+/******** END LAYER 006 ********/
 
 .layer007 li:nth-child(2) {
   position: absolute;
@@ -330,6 +343,23 @@ p {
     width: 50%;
   }
   /******** END CENTER 004 ********/
+
+  /******** CENTER 006 ********/
+  .centerInfo006 {
+    margin-top: -50.25%;
+    text-align: center;
+  }
+
+  .centerInfo006 img {
+    width: 60%;
+  }
+
+  .centerInfo006 img:nth-child(1) {
+    margin-top: 60.75%;
+    width: 80%;
+  }
+  /******** END CENTER 001 ********/
+
 /******** END CENTER DIV ********/
 
 
