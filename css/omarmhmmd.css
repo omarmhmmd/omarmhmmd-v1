@@ -246,11 +246,11 @@ p {
 
 .layer007 li:nth-child(2) {
   position: absolute;
-  padding-left: 69.75%;
+  padding-left: 68%;
 }
 
 .layer007 {
-  cursor: default;
+  cursor: pointer;
 }
 /******** END MENU/LAYERS ********/
 
