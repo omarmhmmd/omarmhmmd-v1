@@ -34,7 +34,7 @@ dw_Tooltip.content_vars = {
         h: 300 // height of image
     },
     L6: {
-        img: 'images/Yosemite.gif',
+        img: 'images/bnwY.gif',
         w: 300, // width of image
         h: 300 // height of image
     }
