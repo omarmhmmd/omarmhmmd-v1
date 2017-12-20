@@ -64,6 +64,11 @@ p {
   font-size: 1.25vw;
   color: black;
 }
+
+/* iframe {
+  width: 1080px;
+  height: 720px;
+} */
 /******** END BODY ********/
 .container {
   height: 100%;
@@ -202,7 +207,9 @@ p {
   .info003 {
     display: none;
     margin: -23.5% 0 0% 0%;
+    padding-bottom: -20%;
     letter-spacing: 0.025vw;
+    position: absolute;
   }
   /******** END INFO 003 ********/
 /******** END LAYER 003 ********/
@@ -257,14 +264,19 @@ p {
 /******** CENTER DIV ********/
   /******** CENTER 001 ********/
   .centerInfo001 {
-    margin-top: 7%;
+    margin-top: 11%;
     text-align: center;
+  }
+
+  .promo iframe {
+    width: 1000px;
+    height: 563px;
   }
   /******** END CENTER 001 ********/
 
   /******** CENTER 002 ********/
   .centerInfo002 {
-    margin-top: 9.75%;
+    margin-top: 12.5%;
     text-align: center;
   }
 
@@ -291,15 +303,8 @@ p {
 
   /******** CENTER 003 ********/
   .centerInfo003 {
-    margin-top: 18%;
+    margin-top: 11%;
     text-align: center;
-  }
-
-  .centerInfo003 iframe:nth-child(1) {
-    margin-top: -11.5%;
-    width: 1080px;
-    height:720px;
-    margin-bottom: -1.5%;
   }
 
   .centerInfo003 .info {
@@ -385,7 +390,7 @@ p {
 }
 
 .promo::-webkit-scrollbar {
-  height: 1.5vh;
+  height: 1vw;
   background-color: none;
   /*padding-right: 10000px;*/
 }
@@ -399,30 +404,27 @@ p {
 /******* END HORIZONTAL SCROLL *******/
 
 /******** VIMEO RESPONSIVE ********/
-/*.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
 }
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}*/
 
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
 }
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 5%;
-	width: 90%;
+
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
 /******** END VIMEO RESPONSIVE ********/
