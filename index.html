@@ -23,6 +23,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
+
+    <script>
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+          if(imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          }
+        }
+      }
+      window.onload = init;
+    </script>
   </head>
 
   <body>
@@ -466,18 +478,6 @@
     </div>
 
   </body>
-
-  <script>
-    function init() {
-      var imgDefer = document.getElementsByTagName('img');
-      for (var i=0; i<imgDefer.length; i++) {
-        if(imgDefer[i].getAttribute('data-src')) {
-          imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-        }
-      }
-    }
-    window.onload = init;
-  </script>
 
   <script src="js/responsive.js"> </script>
   <script src="dist/omarmhmmd.js"> </script>
