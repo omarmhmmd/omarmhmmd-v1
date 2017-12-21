@@ -388,7 +388,7 @@ if($(window).width() > $(window).height()) {
 
       $(".info003").fadeIn(3250);
 
-      setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 800);
+      setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 900);
 
       $(".layer003").css({borderBottom: 'solid #000 0.15vw'}).animate({
            borderWidth: "0.15vw"
@@ -397,7 +397,7 @@ if($(window).width() > $(window).height()) {
         targets: '.layer003',
         translateY: "-358%",
         easing:easing,
-        duration:durationLayers,
+        duration:durationLayers * 1.25,
       });
       var bgColor003 = anime({
         targets: 'body',
@@ -437,7 +437,7 @@ if($(window).width() > $(window).height()) {
         targets: '.layer003',
         translateY: "0",
         easing:easing,
-        duration:durationLayers,
+        duration:durationLayers * 1.25,
       });
       var bgColor003 = anime({
         targets: 'body',
