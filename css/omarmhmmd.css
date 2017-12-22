@@ -97,6 +97,7 @@ p {
 
 .layers {
   cursor: pointer;
+  /* font-family: 'nh65'; */
 }
 
 .layers li {
@@ -119,6 +120,8 @@ p {
   line-height: normal;
   font-size: 1.25vw;
   color: black;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .info p span{
@@ -135,6 +138,24 @@ p {
   height: 20%;
   position: absolute;
   padding-left: 44.5%;
+}
+
+.info001 li:nth-child(2) {
+  width: 18.57%;
+  height: 20%;
+  position: absolute;
+  padding-left: 44.5%;
+  text-align: left;
+}
+
+.info002 li:nth-child(2) {
+  hyphens: none;
+  text-align: left !important;
+}
+
+.info003 li:nth-child(2) {
+  hyphens: none;
+  text-align: left !important;
 }
 
 .info li:nth-child(3) {
@@ -264,7 +285,7 @@ p {
 /******** CENTER DIV ********/
   /******** CENTER 001 ********/
   .centerInfo001 {
-    margin-top: 11%;
+    margin-top: 9.5%;
     text-align: center;
   }
 
