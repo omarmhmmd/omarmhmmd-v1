@@ -141,11 +141,12 @@ p {
 }
 
 .info001 li:nth-child(2) {
-  width: 18.57%;
+  width: 20%;
   height: 20%;
   position: absolute;
   padding-left: 44.5%;
   text-align: left;
+  hyphens: none;
 }
 
 .info002 li:nth-child(2) {
