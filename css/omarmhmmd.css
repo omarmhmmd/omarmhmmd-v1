@@ -65,6 +65,10 @@ p {
   color: black;
 }
 
+button {
+  float: bottom;
+}
+
 /* iframe {
   width: 1080px;
   height: 720px;
@@ -97,6 +101,14 @@ p {
 
 .layers {
   cursor: pointer;
+  /* font-family: 'nh65'; */
+}
+
+.go2Top {
+  background-color: black;
+  height: 10vh;
+  border-style: solid;
+  border-width: 0.15vw 0 0.15vw 0;
   /* font-family: 'nh65'; */
 }
 
@@ -216,6 +228,7 @@ p {
   display: none;
   margin: -17.5% 0 0% 0%;
   letter-spacing: 0.025vw;
+  position: absolute;
 }
 /******** END LAYER 002 ********/
 
@@ -246,6 +259,7 @@ p {
     display: none;
     margin: -30.5% 0 0% 0%;
     letter-spacing: 0.025vw;
+    position: absolute;
   }
   /******** END INFO 004 ********/
 /******** END LAYER 004 ********/
@@ -353,7 +367,7 @@ p {
 
   /******** CENTER 004 ********/
   .centerInfo004 {
-    margin-top: 16%;
+    margin-top: 21.5%;
     text-align: center;
   }
 
@@ -450,3 +464,18 @@ p {
   height: 90%;
 }
 /******** END VIMEO RESPONSIVE ********/
+
+/******** GO BACK TO TOP ********/
+.goBack {
+  cursor: pointer;
+  border-style: solid;
+  border-width: 0.25vh 0 0 0;
+  height: 2vw;
+  padding: 2%;
+}
+
+/* .goBack:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+} */

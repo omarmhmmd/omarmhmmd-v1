@@ -126,6 +126,14 @@ document.getElementById("changeColor").innerHTML = hslToHex(h, s, 50);
 //   var color007 = randomColorRGB();
 // }
 
+$(".goBack").click(function() {
+  $('html, body').stop().animate({
+    scrollTop:0}, 1000, 'easeInOutSine');
+
+  // jQuery('html,body').animate({
+  //   scrollTop:0},0);
+})
+
   var color001 = 'hsl(' + h + ',' + s + '%, 50%)';
   var color002 = 'hsl(' + h + ',' + s + '%, 56.7%)';
   var color003 = 'hsl(' + h + ',' + s + '%, 62.4%)';
@@ -240,6 +248,7 @@ if($(window).width() > $(window).height()) {
       });
 
       clickedLayer001 = true;
+
     }
     else if (clickedLayer001) {
       console.log("back");
