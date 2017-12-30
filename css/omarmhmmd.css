@@ -346,7 +346,13 @@ button {
 
   /******** CENTER 003 ********/
   .centerInfo003 {
-    margin-top: 18%;
+    position: absolute;
+    margin-top: -4%;
+    text-align: center;
+  }
+
+  .centerInfo003 .qiblah001 {
+    margin-top: 15%;
     text-align: center;
   }
 
