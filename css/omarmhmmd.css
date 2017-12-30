@@ -346,8 +346,7 @@ button {
 
   /******** CENTER 003 ********/
   .centerInfo003 {
-    position: absolute;
-    margin-top: -4%;
+    margin-top: 0%;
     text-align: center;
   }
 
