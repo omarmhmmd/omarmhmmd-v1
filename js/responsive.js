@@ -5,4 +5,9 @@ if($(window).width() < $(window).height()) {
 
     //document.getElementsByTagName("button").disabled = true;
 
+    $('.centerInfo001').remove();
+    $('.centerInfo002').remove();
+    $('.centerInfo003').remove();
+    $('.centerInfo004').remove();
+    $('.centerInfo006').remove();
 }
