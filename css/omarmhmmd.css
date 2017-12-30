@@ -250,7 +250,7 @@ button {
   /******** INFO 003 ********/
   .info003 {
     display: none;
-    margin: -23.5% 0 0% 0%;
+    margin: 0.5% 0 0% 0%;
     letter-spacing: 0.025vw;
     position: relative;
   }
@@ -323,10 +323,6 @@ button {
     text-align: center;
   }
 
-  .centerInfo002 iframe:nth-child(1) {
-    margin-top: -1.75%;
-  }
-
   .centerInfo002 img {
     width: 70%;
   }
@@ -345,13 +341,13 @@ button {
   /******** END CENTER 002 ********/
 
   /******** CENTER 003 ********/
-  .centerInfo003 {
-    margin-top: 0%;
-    text-align: center;
+  .outside {
+    margin-top: -24.25%;
+    position: absolute;
   }
 
-  .centerInfo003 .qiblah001 {
-    margin-top: 15%;
+  .centerInfo003 {
+    margin-top: 10.5%;
     text-align: center;
   }
 
