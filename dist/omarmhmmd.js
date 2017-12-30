@@ -219,9 +219,12 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
 
-      $(".info001").fadeIn(2500);
+      $("body").css("backgroundColor", color001);
+
+      setTimeout(function(){ $(".info001").fadeIn(750);}, 750);
       // setTimeout(function(){ $(".info001").css("display", "block"); }, 1750);
-      setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 750);
+
+      setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 650);
 
       $(".layer001").css({borderBottom: 'solid #000 0.15vw'});
 
@@ -236,14 +239,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers,
       });
-      var bgColor001 = anime({
-        targets: 'body',
-        backgroundColor: ['#FFF', color001],
-        delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor001 = anime({
+      //   targets: 'body',
+      //   backgroundColor: ['#FFF', color001],
+      //   delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button001',
         rotate: 45,
@@ -266,6 +269,8 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
 
+      $("body").css("backgroundColor", "#ffffff");
+
       setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
 
       // $(".info001").fadeOut(500);
@@ -279,14 +284,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers,
       });
-      var bgColor001 = anime({
-        targets: 'body',
-        backgroundColor: [color001, '#FFF'],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor001 = anime({
+      //   targets: 'body',
+      //   backgroundColor: [color001, '#FFF'],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button001',
         rotate: -90,
@@ -314,7 +319,11 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
 
-      $(".info002").fadeIn(2500);
+      $("body").css("backgroundColor", color002);
+
+      setTimeout(function(){ $(".info002").fadeIn(750);}, 750);
+
+      // $(".info002").fadeIn(2500);
 
       setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 750);
 
@@ -327,14 +336,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers,
       });
-      var bgColor002 = anime({
-        targets: 'body',
-        backgroundColor: ['#FFF', color002],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor002 = anime({
+      //   targets: 'body',
+      //   backgroundColor: ['#FFF', color002],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button002',
         rotate: 45,
@@ -354,6 +363,8 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
 
+      $("body").css("backgroundColor", "#ffffff");
+
       $(".info002").css("display", "none");
 
       setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
@@ -367,14 +378,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers,
       });
-      var bgColor002 = anime({
-        targets: 'body',
-        backgroundColor: [color002, '#FFF'],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor002 = anime({
+      //   targets: 'body',
+      //   backgroundColor: [color002, '#FFF'],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button002',
         rotate: -90,
@@ -400,7 +411,11 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
 
-      $(".info003").fadeIn(3250);
+      $("body").css("backgroundColor", color003);
+
+      setTimeout(function(){ $(".info003").fadeIn(750);}, 750);
+
+      // $(".info003").fadeIn(3250);
 
       setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 900);
 
@@ -413,14 +428,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers * 1.25,
       });
-      var bgColor003 = anime({
-        targets: 'body',
-        backgroundColor: ['#FFF', color003],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor003 = anime({
+      //   targets: 'body',
+      //   backgroundColor: ['#FFF', color003],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button003',
         rotate: 45,
@@ -440,6 +455,8 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
 
+      $("body").css("backgroundColor", "#ffffff");
+
       $(".info003").css("display", "none");
 
       setTimeout(function(){ $(".title").css("visibility", "visible"); }, 200);
@@ -453,14 +470,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers * 1.25,
       });
-      var bgColor003 = anime({
-        targets: 'body',
-        backgroundColor: [color003, '#FFF'],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor003 = anime({
+      //   targets: 'body',
+      //   backgroundColor: [color003, '#FFF'],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button003',
         rotate: -90,
@@ -486,7 +503,11 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
 
-      $(".info004").fadeIn(3250);
+      $("body").css("backgroundColor", color004);
+
+      setTimeout(function(){ $(".info004").fadeIn(750);}, 750);
+
+      // $(".info004").fadeIn(3250);
 
       setTimeout(function(){ $(".title").css("visibility", "hidden"); }, 1200);
 
@@ -498,14 +519,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers * 1.5,
       });
-      var bgColor004 = anime({
-        targets: 'body',
-        backgroundColor: ['#FFF', color004],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor004 = anime({
+      //   targets: 'body',
+      //   backgroundColor: ['#FFF', color004],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button004',
         rotate: 45,
@@ -525,6 +546,8 @@ if($(window).width() > $(window).height()) {
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
 
+      $("body").css("backgroundColor", "#ffffff");
+
       $(".info004").css("display", "none");
 
       setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
@@ -537,14 +560,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers * 1.5,
       });
-      var bgColor004 = anime({
-        targets: 'body',
-        backgroundColor: [color004, '#FFF'],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor004 = anime({
+      //   targets: 'body',
+      //   backgroundColor: [color004, '#FFF'],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button004',
         rotate: -90,
@@ -648,7 +671,11 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("visibility", "hidden");
       $(".layer007").css("display", "none");
 
-      $(".info006").fadeIn(3250);
+      $("body").css("backgroundColor", color006);
+
+      setTimeout(function(){ $(".info006").fadeIn(750);}, 750);
+
+      // $(".info006").fadeIn(3250);
 
       setTimeout( function(){
         $(".title").css('visibility','hidden');
@@ -663,14 +690,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers * 1.5,
       });
-      var bgColor006 = anime({
-        targets: 'body',
-        backgroundColor: ['#FFF', color006],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor006 = anime({
+      //   targets: 'body',
+      //   backgroundColor: ['#FFF', color006],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button006',
         rotate: 45,
@@ -690,6 +717,8 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("visibility", "visible");
       $(".layer007").css("display", "block");
 
+        $("body").css("backgroundColor", "#ffffff");
+
       $(".info006").css("display", "none");
 
       setTimeout(function(){ $(".title").css("visibility", "visible"); }, 200);
@@ -703,14 +732,14 @@ if($(window).width() > $(window).height()) {
         easing:easing,
         duration:durationLayers * 1.5,
       });
-      var bgColor006 = anime({
-        targets: 'body',
-        backgroundColor: [color006, '#FFF'],
-        //delay: durationLayers * 2,
-        easing:easing,
-        duration:durationColors / 2,
-        delay: layerFadeIn
-      });
+      // var bgColor006 = anime({
+      //   targets: 'body',
+      //   backgroundColor: [color006, '#FFF'],
+      //   //delay: durationLayers * 2,
+      //   easing:easing,
+      //   duration:durationColors / 2,
+      //   delay: layerFadeIn
+      // });
       var button = anime({
         targets: '.button006',
         rotate: -90,

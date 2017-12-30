@@ -142,6 +142,7 @@ button {
   color: black;
   text-align: justify;
   hyphens: auto;
+  z-index: -10;
 }
 
 .info p span{
@@ -250,7 +251,7 @@ button {
   /******** INFO 003 ********/
   .info003 {
     display: none;
-    margin: 0.5% 0 0% 0%;
+    margin: -23.5% 0 0% 0%;
     letter-spacing: 0.025vw;
     position: relative;
   }
@@ -341,13 +342,8 @@ button {
   /******** END CENTER 002 ********/
 
   /******** CENTER 003 ********/
-  .outside {
-    margin-top: -24.25%;
-    position: absolute;
-  }
-
   .centerInfo003 {
-    margin-top: 10.5%;
+    margin-top: 15%;
     text-align: center;
   }
 
