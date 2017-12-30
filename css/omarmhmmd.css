@@ -237,7 +237,7 @@ button {
   display: none;
   margin: -17.5% 0 0% 0%;
   letter-spacing: 0.025vw;
-  position: absolute;
+  position: relative;
 }
 /******** END LAYER 002 ********/
 
@@ -251,9 +251,8 @@ button {
   .info003 {
     display: none;
     margin: -23.5% 0 0% 0%;
-    padding-bottom: -20%;
     letter-spacing: 0.025vw;
-    position: absolute;
+    position: relative;
   }
   /******** END INFO 003 ********/
 /******** END LAYER 003 ********/
@@ -349,14 +348,13 @@ button {
 
   /******** CENTER 003 ********/
   .centerInfo003 {
-    margin-top: 11%;
+    margin-top: 18%;
     text-align: center;
   }
 
   .centerInfo003 .info {
     width: 40%;
   }
-
 
   .centerInfo003 img {
     width: 80%;

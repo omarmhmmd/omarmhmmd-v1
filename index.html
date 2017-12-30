@@ -25,15 +25,15 @@
     <script src="http://localhost:35729/livereload.js"></script>
 
     <script>
-      // function init() {
-      //   var imgDefer = document.getElementsByTagName('img');
-      //   for (var i=0; i<imgDefer.length; i++) {
-      //     if(imgDefer[i].getAttribute('data-src')) {
-      //       imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-      //     }
-      //   }
-      // }
-      // window.onload = init;
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+          if(imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          }
+        }
+      }
+      window.onload = init;
     </script>
   </head>
 
@@ -271,7 +271,7 @@
             </ul>
 
             <div class="centerInfo003">
-              <div class="intrinsic-container intrinsic-container-16x9">
+              <div class="intrinsic-container intrinsic-container-16x9 qiblah001">
                 <iframe src = 'https://player.vimeo.com/video/246914053?loop=1&title=0&byline=0&portrait=0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
               </div>
               <img class="terminal"src = "" data-src="portfolio/qiblah/finalPhotos/terminal.gif" alt=""></img>
