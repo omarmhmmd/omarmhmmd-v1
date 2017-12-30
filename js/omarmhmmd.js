@@ -1,6 +1,3 @@
-var randomColorRGB = require('random-color-rgb');
-randomColorRGB();
-
 /******** TOOLTIP ********/
 dw_Tooltip.defaultProps = {
     //supportTouch: true, // set false by default
