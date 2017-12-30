@@ -37,6 +37,14 @@ html {
   color: white;*/
 }
 
+/******* HIGHLIGHT ********/
+::selection {
+  color: white;
+  background: var(--selection-bg);
+}
+
+/******* END HIGHLIGHT ********/
+
 a {
   text-decoration: none;
   color: black;
@@ -100,7 +108,7 @@ button {
 }
 
 .layers {
-  cursor: pointer;
+  cursor: crosshair;
   /* font-family: 'nh65'; */
 }
 
@@ -206,6 +214,7 @@ button {
     display: none;
     margin: -10.75% 0 0 0%;
     letter-spacing: 0.025vw;
+    position: relative;
   }
 
   .zine img {
@@ -283,6 +292,7 @@ button {
     display: none;
     margin: -43% 0 0% 0%;
     letter-spacing: 0.025vw;
+    position: absolute;
   }
   /******** END INFO 006 ********/
 /******** END LAYER 006 ********/
@@ -292,9 +302,9 @@ button {
   padding-left: 68%;
 }
 
-.layer007 {
+/* .layer007 {
   cursor: pointer;
-}
+} */
 /******** END MENU/LAYERS ********/
 
 /******** CENTER DIV ********/
@@ -467,7 +477,7 @@ button {
 
 /******** GO BACK TO TOP ********/
 .goBack {
-  cursor: pointer;
+  cursor: crosshair;
   border-style: solid;
   border-width: 0.25vh 0 0 0;
   height: 2vw;

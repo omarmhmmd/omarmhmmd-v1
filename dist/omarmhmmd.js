@@ -142,6 +142,11 @@ $(".goBack").click(function() {
   var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
   var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
 
+  var highLight = document.querySelector('.container');
+  highLight.style.setProperty('--selection-bg', color001);
+
+  // $(".bgC::selection").css("color", color001);
+
   var layer001 = anime({
     targets: '.layer001',
     backgroundColor: color001,
@@ -207,12 +212,12 @@ if($(window).width() > $(window).height()) {
     if (!clickedLayer001) {
       $(".layer001").removeClass("L1");
 
-      $(".layer002").css("visibility", "hidden");
-      $(".layer003").css("visibility", "hidden");
-      $(".layer004").css("visibility", "hidden");
-      $(".layer005").css("visibility", "hidden");
-      $(".layer006").css("visibility", "hidden");
-      $(".layer007").css("visibility", "hidden");
+      $(".layer002").css("display", "none");
+      $(".layer003").css("display", "none");
+      $(".layer004").css("display", "none");
+      $(".layer005").css("display", "none");
+      $(".layer006").css("display", "none");
+      $(".layer007").css("display", "none");
 
       $(".info001").fadeIn(2500);
       // setTimeout(function(){ $(".info001").css("display", "block"); }, 1750);
@@ -254,12 +259,12 @@ if($(window).width() > $(window).height()) {
       console.log("back");
       $(".layer001").addClass("L1");
 
-      $(".layer002").css("visibility", "visible");
-      $(".layer003").css("visibility", "visible");
-      $(".layer004").css("visibility", "visible");
-      $(".layer005").css("visibility", "visible");
-      $(".layer006").css("visibility", "visible");
-      $(".layer007").css("visibility", "visible");
+      $(".layer002").css("display", "block");
+      $(".layer003").css("display", "block");
+      $(".layer004").css("display", "block");
+      $(".layer005").css("display", "block");
+      $(".layer006").css("display", "block");
+      $(".layer007").css("display", "block");
 
       setTimeout(function(){ $(".title").css("visibility", "visible"); }, 400);
 
