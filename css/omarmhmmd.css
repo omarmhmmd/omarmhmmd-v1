@@ -472,7 +472,7 @@ button {
 .goBack {
   cursor: crosshair;
   border-style: solid;
-  border-width: 0.25vh 0 0 0;
+  border-width: 0.355vh 0 0 0;
   height: 2vw;
   padding: 2%;
 }
