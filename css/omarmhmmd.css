@@ -32,7 +32,7 @@ button {
 
 /******** BODY ********/
 html {
-  font-family:'nh55';
+  font-family:'nh55',helvetica;
   /*background-color: black;
   color: white;*/
 }
@@ -49,7 +49,7 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  font-family: "nh65";
+  font-family: "nh65", helvetica;
 }
 
 a:hover {
@@ -64,7 +64,7 @@ ul {
 }
 
 ul h1 {
-  font-family: "nh65";
+  font-family: "nh65",helvetica;
   font-size: 3vw;
 }
 
@@ -134,7 +134,7 @@ button {
   list-style-type: none;
   position: absolute;
   background-color: ;
-  font-family: 'nh55';
+  font-family: 'nh55',helvetica;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -146,7 +146,7 @@ button {
 }
 
 .info p span{
-  font-family: 'nh65';
+  font-family: 'nh65',helvetica;
 }
 
 .info li:nth-child(1) {
