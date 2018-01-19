@@ -142,7 +142,6 @@ button {
   color: black;
   text-align: justify;
   hyphens: auto;
-  
 }
 
 .info p span{
@@ -242,7 +241,6 @@ button {
 }
 /******** END LAYER 002 ********/
 
-
 /******** LAYER 003 ********/
 .layer003 li:nth-child(2) {
   position: absolute;
@@ -272,6 +270,7 @@ button {
   /******** END INFO 004 ********/
 /******** END LAYER 004 ********/
 
+/******** LAYER 005 ********/
 .layer005 {
   cursor: default !important;
 }
@@ -280,11 +279,12 @@ button {
   position: absolute;
   padding-left: 68%;
 }
+/******** END LAYER 005 ********/
 
 /******** LAYER 006 ********/
 .layer006 li:nth-child(2) {
   position: absolute;
-  padding-left: 70%;
+  padding-left: 69%;
 }
   /******** INFO 006 ********/
   .info006 {
@@ -292,17 +292,34 @@ button {
     margin: -43% 0 0% 0%;
     letter-spacing: 0.025vw;
   }
+
+  .info006 li:nth-child(2) {
+    width: 50%;
+  }
   /******** END INFO 006 ********/
 /******** END LAYER 006 ********/
 
+/******** LAYER 007 ********/
 .layer007 li:nth-child(2) {
   position: absolute;
-  padding-left: 68%;
+  padding-left: 70.25%;
+}
+  /******** INFO 007 ********/
+  .info007 {
+    display: none;
+    margin: -43% 0 0% 0%;
+    letter-spacing: 0.025vw;
+  }
+  /******** END INFO 007 ********/
+/******** END LAYER 007 ********/
+
+/******** LAYER 008 ********/
+.layer008 li:nth-child(2) {
+  position: absolute;
+  padding-left: 68.5%;
 }
 
-/* .layer007 {
-  cursor: pointer;
-} */
+/******** END LAYER 008 ********/
 /******** END MENU/LAYERS ********/
 
 /******** CENTER DIV ********/
@@ -399,10 +416,33 @@ button {
   }
 
   .centerInfo006 img {
-    width: 80%;
+    width: 70%;
+  }
+
+  .centerInfo006 .hero {
+    width: 90%;
   }
 
   .centerInfo006 img:nth-child(1) {
+    margin-top: -25.5%;
+  }
+
+  .centerInfo006 .lightProcessImg {
+    width: 37.5%;
+  }
+  /******** END CENTER 006 ********/
+
+  /******** CENTER 007 ********/
+  .centerInfo007 {
+    margin-top:35.25%;
+    text-align: center;
+  }
+
+  .centerInfo007 img {
+    width: 80%;
+  }
+
+  .centerInfo007 img:nth-child(1) {
     margin-top: -24%;
   }
   /******** END CENTER 001 ********/

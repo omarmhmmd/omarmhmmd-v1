@@ -17,7 +17,7 @@ function newColor() {
 newColor();
 var layerFadeIn = 750;
 
-$(".layer007").click(function() {
+$(".layer008").click(function() {
   window.location.reload(false);
 });
 
@@ -175,6 +175,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "none");
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
+      $(".layer008").css("display", "none");
 
       $("body").css("backgroundColor", color001);
 
@@ -225,6 +226,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "block");
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
+      $(".layer008").css("display", "block");
 
       $("body").css("backgroundColor", "#ffffff");
 
@@ -275,6 +277,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "none");
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
+      $(".layer008").css("display", "none");
 
       $("body").css("backgroundColor", color002);
 
@@ -319,6 +322,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "block");
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
+      $(".layer008").css("display", "block");
 
       $("body").css("backgroundColor", "#ffffff");
 
@@ -367,6 +371,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "none");
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
+      $(".layer008").css("display", "none");
 
       $("body").css("backgroundColor", color003);
 
@@ -411,6 +416,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "block");
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
+      $(".layer008").css("display", "block");
 
       $("body").css("backgroundColor", "#ffffff");
 
@@ -459,6 +465,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "none");
       $(".layer006").css("display", "none");
       $(".layer007").css("display", "none");
+      $(".layer008").css("display", "none");
 
       $("body").css("backgroundColor", color004);
 
@@ -502,6 +509,7 @@ if($(window).width() > $(window).height()) {
       $(".layer005").css("display", "block");
       $(".layer006").css("display", "block");
       $(".layer007").css("display", "block");
+      $(".layer008").css("display", "block");
 
       $("body").css("backgroundColor", "#ffffff");
 
@@ -627,6 +635,7 @@ if($(window).width() > $(window).height()) {
       $(".layer004").css("visibility", "hidden");
       $(".layer005").css("visibility", "hidden");
       $(".layer007").css("display", "none");
+      $(".layer008").css("display", "none");
 
       $("body").css("backgroundColor", color006);
 
@@ -673,6 +682,7 @@ if($(window).width() > $(window).height()) {
       $(".layer004").css("visibility", "visible");
       $(".layer005").css("visibility", "visible");
       $(".layer007").css("display", "block");
+      $(".layer008").css("display", "block");
 
         $("body").css("backgroundColor", "#ffffff");
 
@@ -709,3 +719,99 @@ if($(window).width() > $(window).height()) {
   })
   /******** END LAYER 006 ********/
 }
+
+/******** LAYER 007 ********/
+var clickedLayer007 = false;
+$(".layer007").click(function() {
+  console.log("layer007 Clicked");
+  if (!clickedLayer007) {
+    $(".layer007").removeClass("L7");
+    $(".layer001").css("visibility", "hidden");
+    $(".layer002").css("visibility", "hidden");
+    $(".layer003").css("visibility", "hidden");
+    $(".layer004").css("visibility", "hidden");
+    $(".layer005").css("visibility", "hidden");
+    $(".layer006").css("display", "none");
+    $(".layer008").css("display", "none");
+
+    $("body").css("backgroundColor", color007);
+
+    setTimeout(function(){ $(".info007").fadeIn(750);}, 750);
+
+    // $(".info006").fadeIn(3250);
+
+    setTimeout( function(){
+      $(".title").css('visibility','hidden');
+    },1200);
+
+    $(".layer007").css({borderBottom: 'solid #000 0.15vw'}).animate({
+         borderWidth: "0.15vw"
+     }, 500);
+    var moveLayer007 = anime({
+      targets: '.layer007',
+      translateY: "-651%",
+      easing:easing,
+      duration:durationLayers * 1.5,
+    });
+    // var bgColor006 = anime({
+    //   targets: 'body',
+    //   backgroundColor: ['#FFF', color006],
+    //   //delay: durationLayers * 2,
+    //   easing:easing,
+    //   duration:durationColors / 2,
+    //   delay: layerFadeIn
+    // });
+    var button = anime({
+      targets: '.button007',
+      rotate: 45,
+      scale: 1.25,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer007 = true;
+  }
+  else if (clickedLayer007) {
+    console.log("back from 007");
+    $(".layer007").addClass("L7");
+    $(".layer001").css("visibility", "visible");
+    $(".layer002").css("visibility", "visible");
+    $(".layer003").css("visibility", "visible");
+    $(".layer004").css("visibility", "visible");
+    $(".layer005").css("visibility", "visible");
+    $(".layer006").css("display", "block");
+    $(".layer008").css("display", "block");
+
+      $("body").css("backgroundColor", "#ffffff");
+
+    $(".info007").css("display", "none");
+
+    setTimeout(function(){ $(".title").css("visibility", "visible"); }, 200);
+
+    $(".layer007").css({borderBottom: 'solid #000 0vw'}).animate({
+         borderWidth: "0vw"
+     }, 500);
+    var moveLayer006 = anime({
+      targets: '.layer007',
+      translateY: "0",
+      easing:easing,
+      duration:durationLayers * 1.5,
+    });
+    // var bgColor006 = anime({
+    //   targets: 'body',
+    //   backgroundColor: [color006, '#FFF'],
+    //   //delay: durationLayers * 2,
+    //   easing:easing,
+    //   duration:durationColors / 2,
+    //   delay: layerFadeIn
+    // });
+    var button = anime({
+      targets: '.button007',
+      rotate: -90,
+      scale: 1,
+      easing:easing,
+      duration:durationLayers
+    });
+    clickedLayer006 = false;
+  }
+})
+/******** END LAYER 007 ********/
