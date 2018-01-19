@@ -316,7 +316,7 @@ button {
 /******** LAYER 008 ********/
 .layer008 li:nth-child(2) {
   position: absolute;
-  padding-left: 68.5%;
+  padding-left: 68.25%;
 }
 
 /******** END LAYER 008 ********/
@@ -420,7 +420,7 @@ button {
   }
 
   .centerInfo006 .hero {
-    width: 90%;
+    width: 75%;
   }
 
   .centerInfo006 img:nth-child(1) {
