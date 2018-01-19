@@ -98,6 +98,7 @@ $(".goBack").click(function() {
   var color005 = 'hsl(' + h + ',' + s + '%, 75.8%)';
   var color006 = 'hsl(' + h + ',' + s + '%, 82.5%)';
   var color007 = 'hsl(' + h + ',' + s + '%, 89.2%)';
+  var color008 = 'hsl(' + h + ',' + s + '%, 95.9%)';
 
   var highLight = document.querySelector('.container');
   highLight.style.setProperty('--selection-bg', color001);
@@ -145,13 +146,21 @@ $(".goBack").click(function() {
     targets: '.layer006',
     backgroundColor: color006,
     duration: durationColors,
-    delay:3000,
+    delay:2500,
     easing:easing
   });
 
   var layer007 = anime({
     targets: '.layer007',
     backgroundColor: color007,
+    duration: durationColors,
+    delay:3000,
+    easing:easing
+  });
+
+  var layer008 = anime({
+    targets: '.layer008',
+    backgroundColor: color008,
     duration: durationColors,
     delay:3500,
     easing:easing
