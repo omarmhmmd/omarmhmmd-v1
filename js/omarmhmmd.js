@@ -820,7 +820,7 @@ $(".layer007").click(function() {
       easing:easing,
       duration:durationLayers
     });
-    clickedLayer006 = false;
+    clickedLayer007 = false;
   }
 })
 /******** END LAYER 007 ********/
