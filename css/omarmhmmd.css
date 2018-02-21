@@ -18,17 +18,17 @@ button {
 }
 /******** END RESET ********/
 
-/******** FONTS ********/
-@font-face {
+
+/* @font-face {
  font-family: 'nh55';
- src: url("../fonts/NHaasGroteskTXPro-55Rg.woff") /* TTF file for CSS3 browsers */
+ src: url("../fonts/NHaasGroteskTXPro-55Rg.woff")
 }
 
 @font-face {
  font-family: 'nh65';
- src: url("../fonts/NHaasGroteskTXPro-65Md.woff") /* TTF file for CSS3 browsers */
-}
-/******** END FONTS ********/
+ src: url("../fonts/NHaasGroteskTXPro-65Md.woff")
+} */
+
 
 /******** BODY ********/
 html {
@@ -110,7 +110,7 @@ button {
 }
 
 .layers {
-  cursor: crosshair;
+  cursor: pointer;
   /* font-family: 'nh65'; */
 }
 
