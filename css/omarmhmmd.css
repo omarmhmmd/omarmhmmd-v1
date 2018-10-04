@@ -165,12 +165,6 @@ button {
   height: 10%;
 }
 
-.info007 li:nth-child(1) {
-  width: 40%;
-  height: 10%;
-  hyphens: none;
-}
-
 .info li:nth-child(2) {
   width: 20%;
   height: 20%;
@@ -318,6 +312,19 @@ button {
 /******** END LAYER 006 ********/
 
 /******** LAYER 007 ********/
+.info007 li:nth-child(1) {
+  width: 44%;
+  height: 10%;
+  hyphens: none;
+}
+
+.info007 li:nth-child(2) {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  padding-left: 50.5%;
+}
+
 .layer007 li:nth-child(2) {
   position: absolute;
   padding-left: 69.80%;
@@ -465,7 +472,7 @@ button {
   }
 
   .centerInfo007 img:nth-child(1) {
-    margin-top: -20%;
+    margin-top: -21%;
   }
   /******** END CENTER 001 ********/
 
