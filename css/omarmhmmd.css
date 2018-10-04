@@ -53,6 +53,10 @@ a {
   font-weight: bold;
 }
 
+a #shadeLink {
+  font-weight: normal !important;
+}
+
 #sfmomaLink {
   font-weight: normal;
 }
@@ -161,6 +165,12 @@ button {
   height: 10%;
 }
 
+.info007 li:nth-child(1) {
+  width: 40%;
+  height: 10%;
+  hyphens: none;
+}
+
 .info li:nth-child(2) {
   width: 20%;
   height: 20%;
@@ -188,7 +198,7 @@ button {
 }
 
 .info li:nth-child(3) {
-  width: 17%;
+  width: 20%;
   height: 20%;
   position: absolute;
   padding-left:73.25%;
@@ -280,7 +290,7 @@ button {
 
 /******** LAYER 005 ********/
 .layer005 {
-  cursor: default !important;
+  font-weight: normal;
 }
 
 .layer005 li:nth-child(2) {
@@ -311,6 +321,10 @@ button {
 .layer007 li:nth-child(2) {
   position: absolute;
   padding-left: 69.80%;
+}
+
+.layer007 li:nth-child(1) {
+  width: 90%;
 }
   /******** INFO 007 ********/
   .info007 {
@@ -451,7 +465,7 @@ button {
   }
 
   .centerInfo007 img:nth-child(1) {
-    margin-top: -24%;
+    margin-top: -20%;
   }
   /******** END CENTER 001 ********/
 
